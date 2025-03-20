@@ -206,10 +206,10 @@ if __name__ == "__main__":
     ["brown","red","black","orange","yellow"],
     ["orange","orange","black","black","black","gold"],
     )
-    for badarguments in badarguments:
-        print("try: resistor(" + str(badarguments) + ")")
+    for badargument in badarguments:
+        print("try: resistor(" + str(badargument) + ")")
         try:
-            r1 = resistor(badarguments)
+            r1 = resistor(badargument)
         except Exception as e:
             print("Exception:", e)
         finally:
