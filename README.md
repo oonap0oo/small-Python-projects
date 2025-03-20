@@ -17,5 +17,5 @@ and fiters using a optional search string
 object oriented code to find the value of a resistor 
 out of the color codes present on the component
 can return a tuple containing (value, tolerance) as values
-or a string representation suck as "12 MOhm 5%"
+or a string representation such as "12 MOhm 5%"
 
