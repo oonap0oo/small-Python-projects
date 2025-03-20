@@ -40,6 +40,13 @@ class resistor():
         "white":9
         }
         
+    # a shallow copy has to be made to avoid modifying the original dictionary
+    dict_multiplier_colors = dict_colors.copy()
+    dict_multiplier_colors.update({
+        "gold":-1,
+        "silver":-2
+        })
+        
     dict_tolerance_colors = {
         "silver":10,
         "gold":5,
@@ -51,20 +58,45 @@ class resistor():
     # Dunder methods
     
     # instance initialisation function
-    def __init__(self, *colorbands):
-        if len(colorbands) == 1:
-            colorbands = colorbands[0]
-        if not (4 <= len(colorbands) <= 5):
-            raise Exception(f"invalid number of colors present in {colorbands}") 
-            return(None)
-        for colorband in colorbands:
-            if colorband not in resistor.dict_colors:
-                if colorband not in resistor.dict_tolerance_colors:
-                    errorstr = f"{colorband} not recognised as valid resistor colorband"
-                    raise Exception(errorstr) 
-                    return(None)
+    def __init__(self, *args):
+        # one argument given which is a list or tuple of strings which represent colors
+        if len(args) == 1:
+            if isinstance(args[0], (list, tuple)):
+                if 4 <= len(args[0]) <= 5:
+                    colorbands = args[0]
+                else:
+                    raise Exception(f"{args[0]} contains invalid number of colors: {len(args[0])}")
+            else:
+                raise Exception(f"{args} contains invalid type of argument: {type(args[0])}") 
+        
+        # 4 or 5 seperate arguments given which are strings representing colors
+        elif 4 <= len(args) <= 5:
+            colorbands = args
+        else:    
+            raise Exception(f"{args} contains invalid number of colors: {len(args)}")
+        
+        # check the strings representing colors in colorbands for being valid   
+        match len(colorbands):            
+            case 4:
+                for colorband in colorbands[0:2]:
+                    if (colorband not in resistor.dict_colors):
+                        raise Exception(f"{colorband} not recognised as valid value colorband") 
+                if colorbands[2] not in resistor.dict_multiplier_colors:
+                    raise Exception(f"{colorbands[2]} not recognised as valid multiplier colorband")
+                if colorbands[3] not in resistor.dict_tolerance_colors:
+                    raise Exception(f"{colorbands[3]} not recognised as valid tolerance colorband")
+            case 5:
+                for colorband in colorbands[0:3]:
+                    if (colorband not in resistor.dict_colors):
+                        raise Exception(f"{colorband} not recognised as valid value colorband") 
+                if colorbands[3] not in resistor.dict_multiplier_colors:
+                    raise Exception(f"{colorbands[3]} not recognised as valid multiplier colorband")
+                if colorbands[4] not in resistor.dict_tolerance_colors:
+                    raise Exception(f"{colorbands[4]} not recognised as valid tolerance colorband")
+        # assign the list of given colors to instance attribute 
         self.colorbands = colorbands
         
+    
     # machine readable representation    
     def __repr__(self):
         colors = ( f"\"{color}\"" for color in self.colorbands)
@@ -77,26 +109,26 @@ class resistor():
         valuestr = self.floattometricprefix(value, unit="Ohm")
         return(f"{valuestr} {tol}%")  
     
-    # other instance methods
 
     # instance method calculate value out of color bands
     # returns tuple with (value, tolerance) as numbers    
     def getvalue(self):
         match len(self.colorbands):
+            # 4 colorbands: 2 give value, 1 multiplier, 1 tolerance
             case 4:
-                digitbands = self.colorbands[0:2]
                 digits = ""
-                for digitband in digitbands:
+                for digitband in self.colorbands[0:2]:
                     digit = resistor.dict_colors[ digitband ]
                     digits += str(digit) 
-                    multiplier = "0" * resistor.dict_colors[ self.colorbands[2] ]
+                multiplier = "e" + str( resistor.dict_multiplier_colors[ self.colorbands[2] ] )
+            # 5 colorbands: 3 give value, 1 multiplier, 1 tolerance
             case 5:
-                digitbands = self.colorbands[0:3]
                 digits = ""
-                for digitband in digitbands:
+                for digitband in self.colorbands[0:3]:
                     digit = resistor.dict_colors[ digitband ]
                     digits += str(digit) 
-                    multiplier = "0" * resistor.dict_colors[ self.colorbands[3] ]
+                multiplier = "e" + str( resistor.dict_multiplier_colors[ self.colorbands[3] ] )
+        # the last colorband is the tolerance
         tolerance = resistor.dict_tolerance_colors[ self.colorbands[-1] ]
         resistancevalue = float( f"{digits}{multiplier}" )
         return (resistancevalue, tolerance)
@@ -124,10 +156,10 @@ class resistor():
         
         
         
-# tests
+# tests of class resistance
 
 if __name__ == "__main__":
-    
+        
     r1 = resistor("blue","grey","red","gold")
     print( r1.__repr__() )
     print( r1.getvalue() )
@@ -152,3 +184,35 @@ if __name__ == "__main__":
     print(r1)
     print()
     
+    r1 = resistor(["brown","green","black","gold","brown"])
+    print( r1.__repr__() )
+    print( r1.getvalue() ) 
+    print(r1)
+    print()
+    
+    r1 = resistor(["brown","black","silver","violet"])
+    print( r1.__repr__() )
+    print( r1.getvalue() ) 
+    print(r1)
+    print()
+    
+    print("Error conditions")
+    print("----------------\n")
+    
+    badarguments = (
+    ["orange","red","black"],
+    ["brown","silver","magenta","gold"],
+    ["brown","red","black","magenta","gold"],
+    ["brown","red","black","orange","yellow"],
+    ["orange","orange","black","black","black","gold"],
+    )
+    for badarguments in badarguments:
+        print("try: resistor(" + str(badarguments) + ")")
+        try:
+            r1 = resistor(badarguments)
+        except Exception as e:
+            print("Exception:", e)
+        finally:
+            print()
+        
+ 
