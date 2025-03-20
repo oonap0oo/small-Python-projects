@@ -159,40 +159,40 @@ class resistor():
 # tests of class resistance
 
 if __name__ == "__main__":
+    
+    print("Test of resistance class")
+    print("========================\n")
+    
+    print("Valid use")
+    print("---------\n")
         
     r1 = resistor("blue","grey","red","gold")
     print( r1.__repr__() )
-    print( r1.getvalue() )
     print( r1 )
     print()
                 
     r1 = resistor("yellow","violet","black", "orange", "brown")
     print( r1.__repr__() )
-    print( r1.getvalue() )
     print(r1)
     print()
     
     r1 = resistor("brown","red","blue","gold")
     print( r1.__repr__() )
-    print( r1.getvalue() ) 
     print(r1)
     print()
     
     r1 = resistor(["orange","orange","black","gold"])
     print( r1.__repr__() )
-    print( r1.getvalue() ) 
     print(r1)
     print()
     
     r1 = resistor(["brown","green","black","gold","brown"])
     print( r1.__repr__() )
-    print( r1.getvalue() ) 
     print(r1)
     print()
     
     r1 = resistor(["brown","black","silver","violet"])
     print( r1.__repr__() )
-    print( r1.getvalue() ) 
     print(r1)
     print()
     
