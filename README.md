@@ -14,7 +14,7 @@ function which accepts a list of strings, removes duplicates, sorts alphabetical
 and fiters using a optional search string
 
 ## class_color_code.py
-contains two class definitions:
+contains three class definitions:
 
 ### class resistor()
 contains code to find the value of a resistor 
@@ -27,3 +27,10 @@ contains code to find the colorband colors
 out of the value and tolerance of the component
 both for sets of 4 and 5 colorbands 
 
+### class colors
+contains dictionaries to facilitate printing in
+color in the console using ANSI escape sequences
+
+## get_color_codes.py
+find the color code of a resistor using the classes in class_color_code.py
+prints the color bands in color on a console using ANSI escape sequences.
