@@ -56,12 +56,11 @@ class resistor():
         "silver":10,
         "gold":5,
         "brown":1,
+        "red":2,
         "green":0.5,
         "violet":0.1
         }
-    
-    
-    
+        
     
     
     # Dunder methods
@@ -206,6 +205,7 @@ class resistance():
     10: "silver", 
     5: "gold", 
     1: "brown", 
+    2: "red",
     0.5: "green", 
     0.1: "violet"
     }    
@@ -217,6 +217,9 @@ class resistance():
             raise Exception(f"{value} not a valid value")
         if not isinstance(tolerance, (float,int)):
             raise Exception(f"{tolerance} not a valid tolerance")
+        else:
+            if tolerance not in resistance.dict_tolerance_to_colors:
+                raise Exception(f"{tolerance}% not supported")
         if not isinstance(number_of_colors, int):
             raise Exception(f"{number_of_colors} not a valid number of color bands")
         else:
@@ -241,6 +244,17 @@ class resistance():
     def __iter__(self):
         for colorband in self.getcolorbands():
             yield colorband
+            
+    
+    # instance method to print colorbands in color
+    def ansistringscolorbands(self):
+        for colorband in self.getcolorbands():
+            ansi = colors.dict_set_resistor_colors_for_print[colorband]
+            colortxt = colorband.upper().center(8)
+            output = colors.commands["bold"] + ansi + colortxt +  colors.commands["reset"]
+            yield output
+            
+    
     
     # instance method to get colorbands based on value, tolerance and number of bands
     def getcolorbands(self):
@@ -252,22 +266,22 @@ class resistance():
         match self.number_of_color_bands:
             case 4:
                 # get 2 digits and look them up in dictionary to add 2 colors to list colorband
-                mantissa = float(mantissastr) * 10
+                mantissa = round(float(mantissastr) * 10)
                 exponent = int(exponentstr) - 1
-                digit = mantissa // 10
+                digit = (mantissa // 10)
                 colorband = [resistance.dict_value_to_colors[digit]]
-                digit = mantissa - digit * 10
+                digit = (mantissa - digit * 10)
                 colorband.append(resistance.dict_value_to_colors[digit]) 
             case 5:
                 # get 3 digits and look them up in dictionary to add 3 colors to list colorband
-                mantissa = float(mantissastr) * 100
+                mantissa = round(float(mantissastr) * 100)
                 exponent = int(exponentstr) - 2
-                digit = mantissa // 100
+                digit = (mantissa // 100)
                 colorband = [resistance.dict_value_to_colors[digit]]
                 mantissa = mantissa - digit * 100
-                digit = mantissa // 10
+                digit = (mantissa // 10)
                 colorband.append(resistance.dict_value_to_colors[digit])                  
-                digit = mantissa - digit * 10
+                digit = (mantissa - digit * 10)
                 colorband.append(resistance.dict_value_to_colors[digit]) 
             case _:
                 # another check for number of color bands, maybe not needed?
@@ -277,6 +291,116 @@ class resistance():
         # finallly add the color for tolerance
         colorband.append(resistance.dict_tolerance_to_colors[self.tolerance])                
         return(colorband)
+        
+        
+    # static method, convert a string with metric prefix to float return nan if not valid
+    @staticmethod
+    def metricprefixtofloat( expression ): 
+        #print("--- expression",expression,end=" ---> ")
+        expression = expression.strip()
+        units = ("V", "A", "Ohm", "F","Farad" ,"H" ,"Henry")
+        for unit in units:
+            if unit in expression:
+                expression = expression.replace(unit, "")        
+        #print("expression",expression)
+        dictprefixinv = {'T': 12, 'G': 9, 'M': 6, 'k': 3, 'm': -3, 'µ': -6, 'u': -6, \
+            'n': -9, 'p': -12, 'f': -15}
+        value=None
+        for prefix in dictprefixinv:
+            if prefix in expression:
+                mantissastr,*otherstr=expression.split(prefix)
+                if otherstr[0].isnumeric():
+                    mantissastr=f"{mantissastr}.{otherstr[0]}"
+                exponent=dictprefixinv[prefix]
+                try:
+                    value=float(mantissastr) * 10 ** exponent
+                except ValueError:
+                    value=None
+                finally:
+                    break
+        if value is None: # no metric prefix was encountered
+            try:
+                value=float(expression) # see if it is a regular valid float 
+            except ValueError:
+                value=None
+        return value
+    
+        
+        
+
+class colors: 
+    # commands   
+    commands = {
+        "reset" : "\033[0m",
+        "bold" : "\033[01m",
+        "disable" : "\033[02m",
+        "underline" : "\033[04m",
+        "reverse" : "\033[07m",
+        "strikethrough" : "\033[09m",
+        "invisible" : "\033[08m"
+        }
+    # foreground colors
+    fg = {
+        "black" : "\033[30m",
+        "red" : "\033[31m",
+        "green" : "\033[32m",
+        "yellow" : "\033[33m",
+        "blue" : "\033[34m",
+        "magenta" : "\033[35m",
+        "cyan" : "\033[36m",
+        "white" : "\033[37m",
+        "gray" : "\033[90m",
+        "brightred" : "\033[91m",
+        "brightgreen" : "\033[92m",
+        "brightyellow" : "\033[93m",
+        "brightblue" : "\033[94m",
+        "brightmagenta" : "\033[95m",
+        "brightcyan" : "\033[96m",
+        "brightwhite" : "\033[97m"
+        }
+    # background colors
+    bg = {
+        "black" : "\033[40m",
+        "red" : "\033[41m",
+        "green" : "\033[42m",
+        "yellow" : "\033[43m",
+        "blue" : "\033[44m",
+        "magenta" : "\033[45m",
+        "cyan" : "\033[46m",
+        "white" : "\033[47m",
+        "gray" : "\033[100m",
+        "brightred" : "\033[101m",
+        "brightgreen" : "\033[102m",
+        "brightyellow" : "\033[103m",
+        "brightblue" : "\033[104m",
+        "brightmagenta" : "\033[105m",
+        "brightcyan" : "\033[106m",
+        "brightwhite" : "\033[107m"
+        }
+        
+    dict_set_resistor_colors_for_print = {
+        "black":"\033[40m\033[97m",
+        "brown":"\033[101m\033[97m",
+        "red":"\033[41m\033[97m",
+        "orange":"\033[43m\033[97m",
+        "yellow":"\033[103m\033[97m",
+        "green":"\033[42m\033[97m",
+        "blue":"\033[44m\033[97m",
+        "violet":"\033[45m\033[97m",
+        "grey":"\033[100m\033[97m",
+        "white":"\033[107m\033[30m",
+        #"gold":"\033[43m\033[97m",
+        "gold":"\033[48;5;214m\033[30m",
+        "silver":"\033[107m\033[30m"
+        }
+
+    
+    
+
+        
+        
+        
+        
         
 # tests of class resistor and resistance
 
@@ -343,6 +467,7 @@ if __name__ == "__main__":
     print("---------\n")
     
     argumentstuple = (
+    (82e3,5,5),
     (12e6,5,4),
     (12e6,1,5),
     (68e3,5,4),
@@ -361,7 +486,22 @@ if __name__ == "__main__":
         print("using resistor class, get value back from colors:\n",resistor(list(r2)))
         print()
         
+        
+    # etsting printing ressitor a-band names in color to console 
+    # using ANSI escape codes
     
+    # loop through the colors
+    for acolor,ansi in colors.dict_set_resistor_colors_for_print.items():
+        print(colors.commands["bold"] + ansi + acolor.center(8) +  colors.commands["reset"])
+    
+    
+    print("\nPrinting colorbands in color using ANSI escapesequences\n")    
+    for arguments in argumentstuple:
+        r2 = resistance(*arguments)
+        print(r2.__repr__())
+        print("result:",r2)
+        for band in r2.ansistringscolorbands():
+            print(band)
    
     
     
