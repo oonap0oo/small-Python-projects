@@ -27,6 +27,10 @@
 # contains code to find the colorband colors
 # out of the value and tolerance of the component
 # both for sets of 4 and 5 colorbands 
+#
+# class colors
+# contains dictionaries to facilitate printing in
+# color in the console using ANSI escape sequences
 
 class resistor():
     
