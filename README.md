@@ -34,3 +34,8 @@ color in the console using ANSI escape sequences
 ## get_color_codes.py
 find the color code of a resistor using the classes in class_color_code.py
 prints the color bands in color on a console using ANSI escape sequences.
+
+## get_value_from_color_codes.py
+find the value and tolerance of a resistor based on the color bands.
+It uses the classes in class_color_code.py and prints color bands in color
+using ANSI escape sequences.
