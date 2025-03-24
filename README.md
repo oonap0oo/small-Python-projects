@@ -39,3 +39,7 @@ prints the color bands in color on a console using ANSI escape sequences.
 find the value and tolerance of a resistor based on the color bands.
 It uses the classes in class_color_code.py and prints color bands in color
 using ANSI escape sequences.
+
+## logistic_map_test_v2.py
+Generating a bifurcation diagram of the Logistic Map.
+using Numpy and Matplotlib
