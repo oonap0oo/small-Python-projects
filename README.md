@@ -41,5 +41,14 @@ It uses the classes in class_color_code.py and prints color bands in color
 using ANSI escape sequences.
 
 ## logistic_map_test_v2.py
+![logistic_map_test_v2.jpg](logistic_map_test_v2.jpg)
 Generating a bifurcation diagram of the Logistic Map.
 using Numpy and Matplotlib
+
+## recursive_tree_canvas_v4.py
+![recursive_tree_canvas_v4.png](recursive_tree_canvas_v4.png)
+ Drawing recursive trees on a Tkinter canvas. Four different looking
+ trees are drawn using the same code with different parameters.
+ Function branch() draws one branch and calls function start_new_branches().
+ Function start_new_branches() calls branch() three times to draw branches
+ with different angles. Recursion depth is controlled by parameter number_of_recursions
