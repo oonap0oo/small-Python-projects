@@ -52,3 +52,9 @@ using Numpy and Matplotlib
  Function branch() draws one branch and calls function start_new_branches().
  Function start_new_branches() calls branch() three times to draw branches
  with different angles. Recursion depth is controlled by parameter number_of_recursions
+
+## wbridge.py
+Calculate output voltage of a Wheatstone Bridge as function of one
+variable resistor Rx using Kirchhoff circuit laws and left division operator with a matrix and vector.
+Made to compare code with a GNU Octave script doing the same calculations: [wbridge.m](https://github.com/oonap0oo/GNU_Octave_scripts/blob/23891978e31cf807bc051fc30719fc4f2e71cebe/wbridge.m)
+
