@@ -20,6 +20,8 @@
 #  MA 02110-1301, USA.
 #  
 #  Monte Carlo approximation of PI, using Python + Numpy
+#  A series of points with random x,y coördinates are calculated, 
+#  whether they fall inside the unit circle can be used to approximate the value of PI.
 #  calculations are done in a series of parts called intervals
 #  the code keeps track of the successive PI approximations taking the extra data into
 #  account after each interval, it prints a table and plots a graph
