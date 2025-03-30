@@ -17,9 +17,7 @@ using Numpy and Matplotlib
 ## pi_monte_carlo_circle.py
  ![pi_monte_carlo_circle_plots.png](pi_monte_carlo_circle_plots.png)
 Monte Carlo approximation of PI, using Python and Numpy. 
-Calculations are done in a series of parts called intervals.
-The code keeps track of the successive PI approximations taking the extra data into
-account after each interval, it prints a table and plots a graph.
+A series of points with random x,y coördinates are calculated, whether they fall inside the unit circle can be used to approximate the value of PI. Calculations are done in a series of parts called intervals. The code keeps track of the successive PI approximations taking the extra data into account after each interval, it prints a table and plots a graph. 
 
 
 ## decimal_degrees_to_dms.py
