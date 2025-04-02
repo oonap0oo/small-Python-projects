@@ -27,6 +27,12 @@ the shape ranging from a circle to the flattest ellipse.
 Using the complete elliptic integral of the second kind function ellipe() and
 the Binomial coefficients function binom() from scipy.special.
 
+## wbridge.py
+Calculate output voltage of a Wheatstone Bridge as function of one
+variable resistor Rx using Kirchhoff circuit laws and left division operator with a matrix and vector.
+Made to compare code with a GNU Octave script doing the same calculations: [wbridge.m](https://github.com/oonap0oo/GNU_Octave_scripts/blob/23891978e31cf807bc051fc30719fc4f2e71cebe/wbridge.m)
+
+
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
 A second function takes tuple of  degrees, minutes, seconds and returns string representation   
@@ -66,10 +72,9 @@ find the value and tolerance of a resistor based on the color bands.
 It uses the classes in class_color_code.py and prints color bands in color
 using ANSI escape sequences.
 
+## several_methods_fibonacci_sequence_v2.py
+These 6 different Python functions generate the same list containing a specified number of Fibonacci numbers.
+Included are a generator function, recursive functions with and without memoization, 
+a function from the sympy library and Binet's formula, a closed-form expression.
 
-
-## wbridge.py
-Calculate output voltage of a Wheatstone Bridge as function of one
-variable resistor Rx using Kirchhoff circuit laws and left division operator with a matrix and vector.
-Made to compare code with a GNU Octave script doing the same calculations: [wbridge.m](https://github.com/oonap0oo/GNU_Octave_scripts/blob/23891978e31cf807bc051fc30719fc4f2e71cebe/wbridge.m)
 
