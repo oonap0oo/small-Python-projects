@@ -19,6 +19,13 @@ using Numpy and Matplotlib
 Monte Carlo approximation of PI, using Python and Numpy. 
 A series of points with random x,y coördinates are calculated, whether they fall inside the unit circle can be used to approximate the value of PI. Calculations are done in a series of parts called intervals. The code keeps track of the successive PI approximations taking the extra data into account after each interval, it prints a table and plots a graph. 
 
+## perimeter_ellipse_v4.py
+![perimeter_ellipse_v4_py.png](perimeter_ellipse_v4_py.png)
+Three methods to approximate the Circumference of an ellipse, using Python + Scipy + Numpy + Matplotlib
+The Circumference of a series of elipses with identical surface area is calculated,
+the shape ranging from a circle to the flattest ellipse.
+Using the complete elliptic integral of the second kind function ellipe() and
+the Binomial coefficients function binom() from scipy.special.
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
