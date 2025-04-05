@@ -1,6 +1,12 @@
 # small-Python-projects
 small pieces of Python code
 
+## sierpinski_triangle_tkinter_v6.py
+![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
+Sierpinski Triangle constructed using the Chaos game method. 
+It rotates and scales in and out.
+The triangle is drawn on a tkinter canvas widget.
+
 ## logistic_map_test_v2.py
 ![logistic_map_test_v2.jpg](logistic_map_test_v2.jpg)
 Generating a bifurcation diagram of the Logistic Map.
