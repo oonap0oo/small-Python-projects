@@ -7,6 +7,20 @@ Sierpinski Triangle constructed using the Chaos game method.
 It rotates and scales in and out.
 The triangle is drawn on a tkinter canvas widget.
 
+## pascal_triangle_ansi.py
+![pascal_triangle.png](pascal_triangle.png)
+This code calculates the first 32 rows of Pascal's triangle.
+It then prints the last digit of each value
+by marking if that digit is uneven, the Sierpinski triangle appears.
+This version uses ANSI escape codes to generate colors and reverse characters
+
+## pascal_triangle_no_ansi_v2.py
+This code calculates the first 32 rows of Pascal's triangle
+It then prints the last digit of each value
+by marking if that digit is uneven, the Sierpinski triangle appears.
+This version avoids using ANSI escape codes by reprinting the triangle
+using a character in place of uneven values
+
 ## logistic_map_test_v2.py
 ![logistic_map_test_v2.jpg](logistic_map_test_v2.jpg)
 Generating a bifurcation diagram of the Logistic Map.
