@@ -52,6 +52,12 @@ Calculate output voltage of a Wheatstone Bridge as function of one
 variable resistor Rx using Kirchhoff circuit laws and left division operator with a matrix and vector.
 Made to compare code with a GNU Octave script doing the same calculations: [wbridge.m](https://github.com/oonap0oo/GNU_Octave_scripts/blob/23891978e31cf807bc051fc30719fc4f2e71cebe/wbridge.m)
 
+## lorenz_system_scipy_numpy_v2.py
+![lorenz_system_plots_scipy_python.png](lorenz_system_plots_scipy_python.png)
+This code calculates a solution for the Lorenz System with the system parameters sigma = 10, beta = 8.0 / 3.0, rho = 28.0.
+It uses the Scipy function scipy.integrate.solve_ivp() to solve the system of ODEs. A series of plots is created using matplotlib.
+Showing the three variables x, y and z vs time and also a 3D line plot.
+
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
