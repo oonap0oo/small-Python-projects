@@ -58,6 +58,18 @@ This code calculates a solution for the Lorenz System with the system parameters
 It uses the Scipy function scipy.integrate.solve_ivp() to solve the system of ODEs. A series of plots is created using matplotlib.
 Showing the three variables x, y and z vs time and also a 3D line plot.
 
+## runge_kutta_python_code_exp_decay.py
+![runge_kutta_python_code_exp_deca_plots.png](runge_kutta_python_code_exp_deca_plots.png)
+Comparing three methods to solve a ODE:
+* First-order Euler method, coded directly in Python
+* Fourth-order Runge-Kutta method, coded directly in Python
+* Scipy function solve_ivp()
+Using a a simple exponential decay system because it has an
+exact solution: N(t) = Nₒ.exp(-λ.t)
+Comparing the results with the exact values and mesuring the execution time
+using time.perf_counter().
+Plots are made using matplotlib.
+
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
