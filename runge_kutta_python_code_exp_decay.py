@@ -2,7 +2,7 @@
 #
 #  runge_kutta_python_code_exp_decay.py
 #  
-#  Copyright 2025 Kurt Moerman <nap0@nap0-lenovo>
+#  Copyright 2025 Nap0
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -19,10 +19,13 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
-#  Comparing three methods to solve a ODE
-#  testing first-order Euler and fourth-order Runge-Kutta methods coded directly in Python
-#  on a simple exponential decay system because it has an exact solution
-#  comparing the results and execution time to the scipy function solve_ivp()
+# After using the Python Scipy function solve_ivp() for the Lorenz System graph, wanted to learn more about these sort of functions I coded 2 simpler ones directly in Python and compared
+# * First-order Euler method
+# * Fourth-order Runge-Kutta method
+# * Scipy function solve_ivp()
+# Using a a simple exponential decay system because it has an
+# exact solution: N(t) = Nₒ.exp(-λ.t)
+# Comparing the results with the exact values and measuring the execution time using time.perf_counter()
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -133,7 +136,7 @@ time_values = np.linspace(0, time_interval, number_of_steps)
 # calculate directly the solution using array calculation of numpy
 exp_decay_directly_calculated = expo_decay(time_values, time_delay_constant_lambda, initial_value)
 
-# apply the Runge-Kutta method coded in Python
+# prepare ndarray for the Runge-Kutta method coded in Python
 y_values_runge_kutta = np.empty(number_of_steps)
 
 Tstart = time.perf_counter() 
@@ -164,9 +167,9 @@ result = solve_ivp(dy_dt, (0.0, time_interval), [initial_value], \
 Tstop = time.perf_counter()
 time_scipy_ms = time_difference_ms_str(Tstart, Tstop)
 
-
 # unpack the calculated value from object result
 y_values_scipy = result.y[0]
+
 
 print(title)
 print("The first and last 5 values:")
