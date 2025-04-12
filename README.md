@@ -1,6 +1,13 @@
 # small-Python-projects
 small pieces of Python code
 
+## logistic_map_calculate_image_v3.py
+![logistic_map_calculate_image_v3_plot.png](logistic_map_calculate_image_v3_plot.png)
+This code calculates an image of the bifurcation diagram for the logistic map.
+ Xn+1 = a. Xn.(1 - Xn)
+Iterations are done for increasing values of 'a', the logistic map is represented as a Numpy array
+The image of the map is displayed using Matplotlib and can be saved as a PNG image file.
+
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
 Sierpinski Triangle constructed using the Chaos game method. 
