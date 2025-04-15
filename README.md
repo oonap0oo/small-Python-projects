@@ -77,6 +77,22 @@ Comparing the results with the exact values and mesuring the execution time
 using time.perf_counter().
 Plots are made using matplotlib.
 
+## fourier_series_v4.py
+![fourier_series_plot1.png](fourier_series_plot1.png)
+This code calculates the coefficients of the Fourier Series of a number
+of functions.
+* square_wave
+* pulse
+* sawtooth
+* the absolute value of a sine function
+* a chopped sine function
+* a half sine function
+
+Each function is plotted with their approximations using several numbers 
+of coefficients. Also the Fourier Series coefficients themselves are plotted. 
+The code uses the function integrate.quad() from the Scipy library to calculate the various
+integrals. The plots are made using Matplotlib, Numpy is also used.
+
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
