@@ -24,10 +24,10 @@
 #  It uses the information to: 
 #  calculate the impulse response using Scipy function signal.impulse()  
 #  calculate the frequency response using scipy function signal.bode()
-#  calculate the output signal as function of time for two types of input signal
-#  a square wave generated using Scipy function signal.square() 
-#  and a sawtooth generated using Scipy function signal.sawtooth() 
-#  graphs are made using matplotlib
+#  It performs a convolution of the input signals and the impulse response using scipy function signal.convolve()
+#  The input signals are a square wave generated using Scipy function signal.square() 
+#  and a sawtooth generated using Scipy function signal.sawtooth().
+#  Graphs are made using matplotlib. Calculations use numpy arrays.
 
 from scipy import signal
 import numpy as np
