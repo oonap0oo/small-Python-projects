@@ -93,6 +93,21 @@ of coefficients. Also the Fourier Series coefficients themselves are plotted.
 The code uses the function integrate.quad() from the Scipy library to calculate the various
 integrals. The plots are made using Matplotlib, Numpy is also used.
 
+## scipy_convolution_sallen_key_lpf_v2.py
+![scipy_convolution_sallen_key_lpf_v2_plot.png](scipy_convolution_sallen_key_lpf_v2_plot.png)
+
+This code defines the transferfunction of an example VCVS Sallen-Key active analog low pass filter
+as function of s.
+It uses the information to: 
+* calculate the impulse response using Scipy function signal.impulse()  
+* calculate the frequency response using scipy function signal.bode()
+* calculate the output signal as function of time for two types of input signals. It performs a convolution of the input signals and the impulse response using scipy function signal.convolve()
+
+The input signals are a square wave generated using Scipy function signal.square() 
+and a sawtooth generated using Scipy function signal.sawtooth().
+
+Graphs are made using matplotlib. Calculations use numpy arrays.
+
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
