@@ -108,6 +108,18 @@ and a sawtooth generated using Scipy function signal.sawtooth().
 
 Graphs are made using matplotlib. Calculations use numpy arrays.
 
+## simple_linear_regression_dataset_v2.py
+![simple_linear_regression_plot.png](simple_linear_regression_plot.png)
+
+This code explores 4 different methods for simple linear regression in Python
+It uses a function directly coded in Python:
+1. From python's statistics library: function statistics.linear_regression()
+2. From the Numpy library function numpy.polynomial.polynomial.Polynomial.fit()
+3. From the Scipy library function nscipy.stats.linregress()
+4. It plots the xy data and the linear regression lines
+
+It displays a table using matplotlib underneath the plot 
+the test data is the duration of one swing for different lengths of a pendulum
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
