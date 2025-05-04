@@ -9,10 +9,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec # align subplots also with variable size
 
+r"""
+          r1
+Vin o---/\/\/\----o-------o Vout
+                  |
+                  |
+                  /
+                  \
+                  / r2
+                  \
+                  |
+                  |
+    o-------------o-------
+"""
+
 
  # ****  PARAMETERS  ****
 Vin = 5.0
-r1_nominal = 1e3 # upper resistor
+r1_nominal = 1.5e3 # upper resistor
 r2_nominal = 1e3 # lower resistor
 tolerance = 0.01 # of both resistors
 ratio_tol_stddev = 3.0 # ratio of tolerance / standard deviation
@@ -56,7 +70,7 @@ plt.suptitle(f"Monte Carlo analysis of voltage divider",
 
 # subplot showing histogram of r1
 plt.subplot(gs[0])
-plt.title("Values of resistor r1", 
+plt.title("Values of upper resistor of voltage divider r1", 
             fontsize = text_size + 2, fontweight = "bold", y = 1.02)
 plt.xlabel("resistance [Ohm]", fontsize = text_size)
 plt.ylabel("quantities", fontsize = text_size)
@@ -69,7 +83,7 @@ plt.legend(fontsize = text_size)
 
 # subplot showing histogram of r2
 plt.subplot(gs[2])
-plt.title("Values of resistors r1", 
+plt.title("Values of lower resistor of voltage divider r2", 
             fontsize = text_size + 2, fontweight = "bold", y = 1.02)
 plt.xlabel("resistance [Ohm]", fontsize = text_size)
 plt.ylabel("quantities", fontsize = text_size)
