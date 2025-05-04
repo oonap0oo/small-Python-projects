@@ -121,6 +121,15 @@ It uses a function directly coded in Python:
 It displays a table using matplotlib underneath the plot 
 the test data is the duration of one swing for different lengths of a pendulum
 
+## monte_carlo_circuit.py
+![monte_carlo_circuit_screenshot.png](monte_carlo_circuit_screenshot.png)
+
+MONTE CARLO ANALYSIS USING PYTHON, NUMPY AND MATPLOTLIB
+this code performs a Monte Carlo analysis of a voltage divider with two resistors
+Numpy is used to generate the random values with a normal distribution
+matplotlib is used to generate the plot
+
+
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
 A second function takes tuple of  degrees, minutes, seconds and returns string representation   
