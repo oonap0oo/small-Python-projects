@@ -1,5 +1,5 @@
-# MONTE CARLO ANALYSIS USING PYHTON, NUMPY AND MATPLOTLIB
-# this code eprforms a Monte Carlo analysis of a voltage divider with two resistors
+# MONTE CARLO ANALYSIS USING PYTHON, NUMPY AND MATPLOTLIB
+# this code performs a Monte Carlo analysis of a voltage divider with two resistors
 # Numpy is used to generate the random values with a normal distribution
 # matplotlib is used to generate the plot
 # this code is shared without any warranty or implied warranty of
