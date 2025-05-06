@@ -129,6 +129,12 @@ this code performs a Monte Carlo analysis of a voltage divider with two resistor
 Numpy is used to generate the random values with a normal distribution
 matplotlib is used to generate the plot
 
+## lotka_volterra_predator_prey_model_v2.py
+![lotka_volterra_screenshot.png](lotka_volterra_screenshot.png)
+
+This code calculates some solutions to an example Lotka–Volterra predator–prey model. 
+Function solve_ivp() is used from module Scipy to calculate solutions for 3 different initial conditions.
+The result is plotted as function of time and in a phase-space plot using Matplotlib.
 
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
