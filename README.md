@@ -136,6 +136,12 @@ This code calculates some solutions to an example Lotka–Volterra predator–pr
 Function solve_ivp() is used from module Scipy to calculate solutions for 3 different initial conditions.
 The result is plotted as function of time and in a phase-space plot using Matplotlib.
 
+## buffons_needle_pi_approximation.py
+![buffons_needle_pi_approximation_screenshot.png](buffons_needle_pi_approximation_screenshot.png)
+
+This code uses Buffon's needle problem to approximate PI. A number of needles is randomly dropped on the floor.
+By keeping track of the number of needles touching a set of parallel lines PI can be approximated. It is a Monte Carlo method.
+
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
 A second function takes tuple of  degrees, minutes, seconds and returns string representation   
