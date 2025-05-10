@@ -1,27 +1,55 @@
 # small-Python-projects
 small pieces of Python code
 
+## mandelbrot_v1.py
+![mandelbrot_v1_image.png](mandelbrot_v1_image.png)
+
+This code calculates a image of the Mandelbrot set, it uses numpy for vectorized calculations and
+matplotlib for display. 
+
+This version has parameters set to view the complete Mandelbrot fractal
+
+The image can be saved as png image file
+
+## mandelbrot_v1_detail.py
+![mandelbrot_v1_detail_image.png](mandelbrot_v1_detail_image.png)
+
+This code calculates a image of the Mandelbrot set, it uses numpy for vectorized calculations and
+matplotlib for display. 
+
+This version has parameters set to view a detail of the Mandelbrot fractal
+
+The image can be saved as png image file
+
 ## logistic_map_calculate_image_v3.py
 ![logistic_map_calculate_image_v3_plot.png](logistic_map_calculate_image_v3_plot.png)
+
 This code calculates an image of the bifurcation diagram for the logistic map.
+```
  Xn+1 = a. Xn.(1 - Xn)
+```
+
 Iterations are done for increasing values of 'a', the logistic map is represented as a Numpy array
+
 The image of the map is displayed using Matplotlib and can be saved as a PNG image file.
 
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
+
 Sierpinski Triangle constructed using the Chaos game method. 
 It rotates and scales in and out.
 The triangle is drawn on a tkinter canvas widget.
 
 ## pascal_triangle_ansi.py
 ![pascal_triangle.png](pascal_triangle.png)
+
 This code calculates the first 32 rows of Pascal's triangle.
 It then prints the last digit of each value
 by marking if that digit is uneven, the Sierpinski triangle appears.
 This version uses ANSI escape codes to generate colors and reverse characters
 
 ## pascal_triangle_no_ansi_v2.py
+
 This code calculates the first 32 rows of Pascal's triangle
 It then prints the last digit of each value
 by marking if that digit is uneven, the Sierpinski triangle appears.
@@ -30,11 +58,13 @@ using a character in place of uneven values
 
 ## logistic_map_test_v2.py
 ![logistic_map_test_v2.jpg](logistic_map_test_v2.jpg)
+
 Generating a bifurcation diagram of the Logistic Map.
 using Numpy and Matplotlib
 
 ## recursive_tree_canvas_v4.py
 ![recursive_tree_canvas_v4.png](recursive_tree_canvas_v4.png)
+ 
  Drawing recursive trees on a Tkinter canvas. Four different looking
  trees are drawn using the same code with different parameters.
  Function branch() draws one branch and calls function start_new_branches().
@@ -43,11 +73,13 @@ using Numpy and Matplotlib
 
 ## pi_monte_carlo_circle.py
  ![pi_monte_carlo_circle_plots.png](pi_monte_carlo_circle_plots.png)
+
 Monte Carlo approximation of PI, using Python and Numpy. 
 A series of points with random x,y coördinates are calculated, whether they fall inside the unit circle can be used to approximate the value of PI. Calculations are done in a series of parts called intervals. The code keeps track of the successive PI approximations taking the extra data into account after each interval, it prints a table and plots a graph. 
 
 ## perimeter_ellipse_v4.py
 ![perimeter_ellipse_v4_py.png](perimeter_ellipse_v4_py.png)
+
 Three methods to approximate the Circumference of an ellipse, using Python + Scipy + Numpy + Matplotlib
 The Circumference of a series of elipses with identical surface area is calculated,
 the shape ranging from a circle to the flattest ellipse.
@@ -55,18 +87,21 @@ Using the complete elliptic integral of the second kind function ellipe() and
 the Binomial coefficients function binom() from scipy.special.
 
 ## wbridge.py
+
 Calculate output voltage of a Wheatstone Bridge as function of one
 variable resistor Rx using Kirchhoff circuit laws and left division operator with a matrix and vector.
 Made to compare code with a GNU Octave script doing the same calculations: [wbridge.m](https://github.com/oonap0oo/GNU_Octave_scripts/blob/23891978e31cf807bc051fc30719fc4f2e71cebe/wbridge.m)
 
 ## lorenz_system_scipy_numpy_v2.py
 ![lorenz_system_plots_scipy_python.png](lorenz_system_plots_scipy_python.png)
+
 This code calculates a solution for the Lorenz System with the system parameters sigma = 10, beta = 8.0 / 3.0, rho = 28.0.
 It uses the Scipy function scipy.integrate.solve_ivp() to solve the system of ODEs. A series of plots is created using matplotlib.
 Showing the three variables x, y and z vs time and also a 3D line plot.
 
 ## runge_kutta_python_code_exp_decay.py
 ![runge_kutta_python_code_exp_deca_plots.png](runge_kutta_python_code_exp_deca_plots.png)
+
 Comparing three methods to solve a ODE:
 * First-order Euler method, coded directly in Python
 * Fourth-order Runge-Kutta method, coded directly in Python
@@ -79,6 +114,7 @@ Plots are made using matplotlib.
 
 ## fourier_series_v4.py
 ![fourier_series_plot1.png](fourier_series_plot1.png)
+
 This code calculates the coefficients of the Fourier Series of a number
 of functions.
 * square_wave
