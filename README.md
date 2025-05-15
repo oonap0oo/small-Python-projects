@@ -21,6 +21,11 @@ This version has parameters set to view a detail of the Mandelbrot fractal
 
 The image can be saved as png image file
 
+## julia_v1.py
+![julia1.png](julia1.png)
+
+A moddification of the Mandelbrot code allows to calculate the Julia set.
+
 ## logistic_map_calculate_image_v3.py
 ![logistic_map_calculate_image_v3_plot.png](logistic_map_calculate_image_v3_plot.png)
 
