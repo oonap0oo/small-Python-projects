@@ -1,3 +1,11 @@
+# Batch Image Resizer
+# this python code resizes all supported image files in a directory
+# the resized version of the images are saved as new image files
+# this code is written for educational purposes
+# in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 import sys, os
 from PIL import Image, ImageOps
 
@@ -34,7 +42,7 @@ def get_image_files(path, extensions, filter_exclude):
     list_valid_images = []
     for dir_entry in list_dir_entries:
         file_name, extension = os.path.splitext(dir_entry)                
-        if (extension.replace(".","") in extensions) and (filter_exclude not in file_name):
+        if (extension.replace(".","").lower() in extensions) and (filter_exclude not in file_name):
             list_valid_images.append(dir_entry)
     return(list_valid_images)
 
@@ -102,7 +110,7 @@ pillow_resize_filter = Image.Resampling.LANCZOS # filter for resizing Lancos giv
 print("Batch Image Resizer")
 print("-------------------")
 
-# first use the command line argument if present and valid else prompt user for path
+# use the command line argument if present and valid, else prompt user for path
 # a default working directory is provided
 current_working_directory = get_directory_from_command_line_args()
 if current_working_directory == None:
