@@ -183,6 +183,12 @@ The result is plotted as function of time and in a phase-space plot using Matplo
 This code uses Buffon's needle problem to approximate PI. A number of needles is randomly dropped on the floor.
 By keeping track of the number of needles touching a set of parallel lines PI can be approximated. It is a Monte Carlo method.
 
+## batch_resizer.py
+![batch_resizer_screenshot.png](batch_resizer_screenshot.png)
+This python code resizes all supported image files in a directory.
+The resized version of the images are saved as new image files.
+
+
 ## decimal_degrees_to_dms.py
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
 A second function takes tuple of  degrees, minutes, seconds and returns string representation   
@@ -229,5 +235,7 @@ a function from the sympy library and Binet's formula, a closed-form expression.
 
 ##  roman_numerals_v2.py
 This code converts a roman numeral in standard form to an integer
+
+
 
 
