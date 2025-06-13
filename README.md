@@ -40,8 +40,6 @@ The image of the map is displayed using Matplotlib and can be saved as a PNG ima
 
 ## kings_dream_cpython.py
 
-## King's Dream Fractal
-
 ![kings_dream_cpython_screenshot.png\-}-](kings_dream_cpython_screenshot.png)
 
 This script draws the fractal defined by iterating the x,y values through the following function
