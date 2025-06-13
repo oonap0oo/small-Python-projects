@@ -38,6 +38,29 @@ Iterations are done for increasing values of 'a', the logistic map is represente
 
 The image of the map is displayed using Matplotlib and can be saved as a PNG image file.
 
+## kings_dream_cpython.py
+
+## King's Dream Fractal
+
+![kings_dream_cpython_screenshot.png\-}-](kings_dream_cpython_screenshot.png)
+
+This script draws the fractal defined by iterating the x,y values through the following function
+
+        x = sin(a*x) + b*sin(a*y)
+        y = sin(c*x) + d*sin(c*y)
+
+with constants of 
+
+        a = 2.879879
+        b = -0.765145
+        c = -0.966918
+        d = 0.744728
+
+and initial values of x=2, y=0 
+
+At each point x,y the screen color is retrieved and increased
+The script uses the numpy, matplotlib and math libraries.
+ 
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
 
