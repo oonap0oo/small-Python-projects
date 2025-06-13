@@ -56,7 +56,7 @@ with constants of
 
 and initial values of x=2, y=0 
 
-At each point x,y the screen color is retrieved and increased
+The image can be saved as PNG file.
 The script uses the numpy, matplotlib and math libraries.
  
 ## sierpinski_triangle_tkinter_v6.py
