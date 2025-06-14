@@ -58,6 +58,28 @@ and initial values of x=2, y=0
 
 The image can be saved as PNG file.
 The script uses the numpy, matplotlib and math libraries.
+
+## tinkerbell.py
+
+![tinkerbell_screenshot.png\-}-](tinkerbell_screenshot.png)
+
+A variation of the code for the 'King's dream fractal' yields this 'tinkerbell' fractal.
+This script draws the fractal defined by iterating the x,y values through the following function
+
+        x = x² -y² +ax + by
+        y = 2xy + cx + dy
+
+with constants of 
+
+        a = 0.9
+        b = -0.6013
+        c = 2.0
+        d = 0.5
+
+and initial values of x=0.01, y=0.01
+
+The image can be saved as PNG file.
+The script uses the numpy, matplotlib and math libraries.
  
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
