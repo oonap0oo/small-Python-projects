@@ -59,6 +59,19 @@ and initial values of x=2, y=0
 The image can be saved as PNG file.
 The script uses the numpy, matplotlib and math libraries.
 
+## hopalong.py
+
+![hopalong_screenshot.png\-}-](hopalong_screenshot.png)
+
+A variation of the code for the 'King's dream fractal' yields this 'hopalong' fractal.
+This script draws the fractal defined by iterating the x,y values through the following function
+
+        x = y - 1 - sqrt(abs(bx - 1 - c)) . sign(x-1)
+        y = a - x - 1
+
+Initial values are 0.0 for x and y
+The parameters a,b,c can be any value between 0.0 and 10.0. A lot of combinations seem to give an intresting fractal
+
 ## tinkerbell.py
 
 ![tinkerbell_screenshot.png\-}-](tinkerbell_screenshot.png)
