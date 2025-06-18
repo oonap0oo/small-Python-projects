@@ -93,6 +93,26 @@ and initial values of x=0.01, y=0.01
 
 The image can be saved as PNG file.
 The script uses the numpy, matplotlib and math libraries.
+
+## quadrup_two.py
+![quadrup_two_screenshot.png](quadrup_two_screenshot.png)
+
+A further variation of the code for the 'King's dream fractal' yields the 'Quadrup Two' fractal.
+This script draws the fractal defined by iterating the x,y values through the following function
+
+        x = y - sgn(x) * sin(ln|b * x - c|) * atan( (c * xn - b)2 )
+        y = a - x
+
+with constants for example, they can be varied to give different fractals
+
+        a = 34
+        b = 1
+        c = 5
+
+and initial values of x=0, y=0
+
+The image can be saved as PNG file.
+The script uses the numpy, matplotlib and math libraries.
  
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
