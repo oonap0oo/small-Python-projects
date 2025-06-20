@@ -113,6 +113,26 @@ and initial values of x=0, y=0
 
 The image can be saved as PNG file.
 The script uses the numpy, matplotlib and math libraries.
+
+## Gumowski_Mira.py
+![Gumowski_Mira6.png](Gumowski_Mira6.png)
+
+This Gumowski-Mira fractal seems very sensitive to parameter and intial values.
+This script draws the fractal defined by iterating the x,y values through the following function
+
+        f(x) = ax + 2(1-a). x² / (1+x²)²
+        xn+1 = by + f(xn)
+        yn+1 = f(xn+1) - xn
+
+with constants for example, they can be varied to give different fractals
+
+        a = -0.7  a should be within [-1,1]
+        b = 1.0 should be 1.0 (or very close?)
+
+and initial values of x=-5.5, y=-5.0, they should be in [-20,20]
+
+The image can be saved as PNG file.
+The script uses the numpy, matplotlib and math libraries.
  
 ## sierpinski_triangle_tkinter_v6.py
 ![sierpinski_triangle_tkinter_v6_screenshot.png](sierpinski_triangle_tkinter_v6_screenshot.png)
