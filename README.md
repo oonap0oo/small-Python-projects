@@ -284,6 +284,23 @@ The result is plotted as function of time and in a phase-space plot using Matplo
 This code uses Buffon's needle problem to approximate PI. A number of needles is randomly dropped on the floor.
 By keeping track of the number of needles touching a set of parallel lines PI can be approximated. It is a Monte Carlo method.
 
+## pendulum.py
+
+![pendulum_screenshot.png](pendulum_screenshot.png)
+
+Damped, driven pendulum
+
+This script calculates a solution to the ODE for a driven pendulum with damping. 
+
+    I*d(dθ/dt)/dt + m*g*l*sin(θ) + b*dθ/dt = a*cos(Ω*t)
+
+This second order non linear ODE has been to be modified to a system of two first order ODEs. 
+
+    dω/dt = 1/I*( -g*m/l*sin(θ) - b*ω + a*cos(Ω*t) )
+    dθ/dt = ω
+
+The script uses a 4th order Runge-Kutta method solve_ivp() from scipy.integrate to calculate a solution of this system.
+
 ## batch_resizer.py
 ![batch_resizer_screenshot.png](batch_resizer_screenshot.png)
 This python code resizes all supported image files in a directory.
