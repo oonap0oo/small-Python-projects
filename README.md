@@ -157,6 +157,17 @@ by marking if that digit is uneven, the Sierpinski triangle appears.
 This version avoids using ANSI escape codes by reprinting the triangle
 using a character in place of uneven values
 
+## sierpinsky_turtle_cpython.py
+
+![sierpinsky_turtle_cpython_screenshot.png](sierpinsky_turtle_cpython_screenshot.png)
+
+This script draws a Sierpinsky triangle recursively using turtle. 
+
+This one makes use extra functionality in CPython's turtle on the PC, such as drawing filled shapes. 
+
+The code shows several triangles using  successively deeper recursion.
+
+
 ## logistic_map_test_v2.py
 ![logistic_map_test_v2.jpg](logistic_map_test_v2.jpg)
 
