@@ -157,6 +157,22 @@ by marking if that digit is uneven, the Sierpinski triangle appears.
 This version avoids using ANSI escape codes by reprinting the triangle
 using a character in place of uneven values
 
+## mandelbrot_text_CPython.py
+
+![mandelbrot_text_CPython_screenshot.png](mandelbrot_text_CPython_screenshot.png)
+
+This code displays a text output of the Mandelbrot fractal. 
+
+ANSI commands are used to generate color.
+
+The mandelbrot values are dispalyed as 2 digit hexadecimal characters.
+
+## mandelbrot_text_CPython_no_ansi.py
+
+A version of mandelbrot_text_CPython.py without the ANSI commands.
+
+Generates a much more basic output witout color.
+
 ## sierpinsky_turtle_cpython.py
 
 ![sierpinsky_turtle_cpython_screenshot.png](sierpinsky_turtle_cpython_screenshot.png)
