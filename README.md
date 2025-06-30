@@ -165,7 +165,7 @@ This code displays a text output of the Mandelbrot fractal.
 
 ANSI commands are used to generate color.
 
-The mandelbrot values are dispalyed as 2 digit hexadecimal characters.
+The Mandelbrot values are displayed as 2 digit hexadecimal characters.
 
 ## mandelbrot_text_CPython_no_ansi.py
 
