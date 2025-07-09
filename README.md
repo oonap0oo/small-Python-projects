@@ -330,12 +330,20 @@ The script uses a 4th order Runge-Kutta method solve_ivp() from scipy.integrate 
 
 ## batch_resizer.py
 ![batch_resizer_screenshot.png](batch_resizer_screenshot.png)
+
 This python code resizes all supported image files in a directory.
+
 The resized version of the images are saved as new image files.
 
+## hex_view4.py
+![hex_view_screenshot.png](hex_view_screenshot.png)
+
+A simple hex viewer running in a console
 
 ## decimal_degrees_to_dms.py
+
 Contains one function that takes an angle as float and returns degrees, minutes, seconds as tuple
+
 A second function takes tuple of  degrees, minutes, seconds and returns string representation   
 
 ## pasword_generator _v2.py
