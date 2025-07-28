@@ -328,6 +328,25 @@ This second order non linear ODE has been to be modified to a system of two firs
 
 The script uses a 4th order Runge-Kutta method solve_ivp() from scipy.integrate to calculate a solution of this system.
 
+## van_der_pol_oscillator.py
+
+![van_der_pol_oscillator_screenshot.png](van_der_pol_oscillator_screenshot.png)
+
+This script calculates a response of a Van Der Pol Oscillator 
+
+    d(d(x)/dt)/dt -  μ * (1 - x**2) * dx/dt + x = A * sin( ω*t )
+    μ: "mu" is non linear damping
+    x: displacement
+    A: amplitude of driving source
+    ω: angular frequency of driving source [rad/s]
+
+The response is calculated in two cases:
+
+* Case 1: undriven with non linear damping mu=0.1
+* Case 2: oscillator with damping mu=8.53, driven with a sinewave source of amplitube A=1.2 and time period T=10s
+
+The response is shown as function of time and as phase plot
+
 ## batch_resizer.py
 ![batch_resizer_screenshot.png](batch_resizer_screenshot.png)
 
