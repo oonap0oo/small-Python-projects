@@ -347,6 +347,28 @@ The response is calculated in two cases:
 
 The response is shown as function of time and as phase plot
 
+## aizawa_attractor_scipy_numpy.py
+
+![Aizawa_Attractor_1.png](Aizawa_Attractor_1.png)
+
+This 3D Aizawa Attractor has 6 parameters and gives a spherical appearance.
+
+Calculations done using scipy function solveivp(). Plotting done using matplotlib.
+
+### equations
+
+    dx/dt = (z - b) * x - d * y
+    dy/dt = d * x + (z - b) * y
+    dz/dt = c + a * z - z**3 / 3.0 - (x**2 + y**2) * (1 + e * z)  + f * z * x**3
+
+### Parameters of the Aizawa attractor
+
+    a = 0.95, b = 0.7, c = 0.6, d = 3.5, e = 0.25, f = 0.1
+    
+### Initial conditions
+
+x0 = 0.1, y0 = 0.0, z0 = 0.0
+
 ## batch_resizer.py
 ![batch_resizer_screenshot.png](batch_resizer_screenshot.png)
 
