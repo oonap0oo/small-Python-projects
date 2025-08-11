@@ -413,6 +413,29 @@ Calculations done using scipy function solveivp(). Plotting done using matplotli
 
 x0 = 0.1, y0 = 0.0, z0 = 0.0
 
+### [nyquist_bode_nichols_plot_pid.py](nyquist_bode_nichols_plot_pid.py)
+
+![Nyquist_plot_of_control_loop.png](Nyquist_plot_of_control_loop.png)
+
+![Bode_plot_of_control_loop.png](Bode_plot_of_control_loop.png)
+
+![Nichols_plot_of_control_loop.png](Nichols_plot_of_control_loop.png)
+
+This script defines the transferfunction of 
+
+*  PID controller
+*  1e order linear system
+* 2nd order linear system
+* time delay
+
+It calculates the open loop gain for a combination of these system with example parameters.
+
+It plots the following graphs of the open loop gain
+
+* Nyquist plot
+* Bode plot
+* Nichols plot
+
 ## Small applications and utilities
 
 ### [batch_resizer.py](batch_resizer.py)
