@@ -390,7 +390,7 @@ The response is calculated in two cases:
 
 The response is shown as function of time and as phase plot
 
-### aizawa_attractor_scipy_numpy.py
+### [aizawa_attractor_scipy_numpy.py](aizawa_attractor_scipy_numpy.py)
 
 ![Aizawa_Attractor_1.png](Aizawa_Attractor_1.png)
 
