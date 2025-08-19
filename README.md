@@ -69,12 +69,6 @@ small pieces of Python code
 
    * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#aizawa_attractor_scipy_numpypy)
 
-   * [equation](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#equation)
-
-   * [Parameters of the Aizawa attracto](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#Parameters of the Aizawa attracto)
-
-   * [Initial condition](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#Initial condition)
-
    * [nyquist_bode_nichols_plot_pid.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#nyquist_bode_nichols_plot_pidpy)
 
    * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#trajectory_with_drag5py)
@@ -86,7 +80,7 @@ small pieces of Python code
 
    * [decimal_degrees_to_dms.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#decimal_degrees_to_dmspy)
 
-   * [pasword_generator _v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pasword_generator _v2py)
+   * [pasword_generator_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pasword_generator_v2py)
 
    * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#function_sortandfilter_v2py)
 
