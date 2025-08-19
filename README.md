@@ -4,10 +4,101 @@ small pieces of Python code
 ## Sections
 
 1. [Fractals and strange attractors](https://github.com/oonap0oo/small-Python-projects#fractals-and-strange-attractors)
+   * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#mandelbrot_v1py)
+
+   * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#mandelbrot_v1_detailpy)
+
+   * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#julia_v1py)
+
+   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#logistic_map_calculate_image_v3py)
+
+   * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#kings_dream_cpythonpy)
+
+   * [hopalong.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#hopalongpy)
+
+   * [tinkerbell.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#tinkerbellpy)
+
+   * [quadrup_two.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#quadrup_twopy)
+
+   * [Gumowski_Mira.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#Gumowski_Mirapy)
+
+   * [sierpinski_triangle_tkinter_v6.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#sierpinski_triangle_tkinter_v6py)
+
+   * [pascal_triangle_ansi.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pascal_triangle_ansipy)
+
+   * [pascal_triangle_no_ansi_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pascal_triangle_no_ansi_v2py)
+
+   * [mandelbrot_text_CPython.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#mandelbrot_text_CPythonpy)
+
+   * [mandelbrot_text_CPython_no_ansi.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#mandelbrot_text_CPython_no_ansipy)
+
+   * [sierpinsky_turtle_cpython.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#sierpinsky_turtle_cpythonpy)
+
+   * [logistic_map_test_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#logistic_map_test_v2py)
+
+   * [gingerbread_CPython.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#gingerbread_CPythonpy)
+
+   * [recursive_tree_canvas_v4.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#recursive_tree_canvas_v4py)
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
+   * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pi_monte_carlo_circlepy)
+
+   * [perimeter_ellipse_v4.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#perimeter_ellipse_v4py)
+
+   * [wbridge.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#wbridgepy)
+
+   * [lorenz_system_scipy_numpy_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#lorenz_system_scipy_numpy_v2py)
+
+   * [runge_kutta_python_code_exp_decay.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#runge_kutta_python_code_exp_decaypy)
+
+   * [fourier_series_v4.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#fourier_series_v4py)
+
+   * [scipy_convolution_sallen_key_lpf_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#scipy_convolution_sallen_key_lpf_v2py)
+
+   * [simple_linear_regression_dataset_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#simple_linear_regression_dataset_v2py)
+
+   * [monte_carlo_circuit.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#monte_carlo_circuitpy)
+
+   * [lotka_volterra_predator_prey_model_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#lotka_volterra_predator_prey_model_v2py)
+
+   * [buffons_needle_pi_approximation.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#buffons_needle_pi_approximationpy)
+
+   * [pendulum.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pendulumpy)
+
+   * [van_der_pol_oscillator.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#van_der_pol_oscillatorpy)
+
+   * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#aizawa_attractor_scipy_numpypy)
+
+   * [equation](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#equation)
+
+   * [Parameters of the Aizawa attracto](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#Parameters of the Aizawa attracto)
+
+   * [Initial condition](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#Initial condition)
+
+   * [nyquist_bode_nichols_plot_pid.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#nyquist_bode_nichols_plot_pidpy)
+
+   * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#trajectory_with_drag5py)
 
 3. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
+   * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#batch_resizerpy)
+
+   * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#hex_view4py)
+
+   * [decimal_degrees_to_dms.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#decimal_degrees_to_dmspy)
+
+   * [pasword_generator _v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#pasword_generator _v2py)
+
+   * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#function_sortandfilter_v2py)
+
+   * [class_color_code.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#class_color_codepy)
+
+   * [get_color_codes.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#get_color_codespy)
+
+   * [get_value_from_color_codes.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#get_value_from_color_codespy)
+
+   * [several_methods_fibonacci_sequence_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#several_methods_fibonacci_sequence_v2py)
+
+   * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects/blob/main/README.md#roman_numerals_v2py)
 
 ## Fractals and strange attractors
 
