@@ -4,95 +4,95 @@ small pieces of Python code
 ## Sections
 
 1. [Fractals and strange attractors](https://github.com/oonap0oo/small-Python-projects#fractals-and-strange-attractors)
-   * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects/README.md#mandelbrot_v1py)
+   * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1py)
 
-   * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects/README.md#mandelbrot_v1_detailpy)
+   * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1_detailpy)
 
-   * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects/README.md#julia_v1py)
+   * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects#julia_v1py)
 
-   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects/README.md#logistic_map_calculate_image_v3py)
+   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
 
-   * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects/README.md#kings_dream_cpythonpy)
+   * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects#kings_dream_cpythonpy)
 
-   * [hopalong.py](https://github.com/oonap0oo/small-Python-projects/README.md#hopalongpy)
+   * [hopalong.py](https://github.com/oonap0oo/small-Python-projects#hopalongpy)
 
-   * [tinkerbell.py](https://github.com/oonap0oo/small-Python-projects/README.md#tinkerbellpy)
+   * [tinkerbell.py](https://github.com/oonap0oo/small-Python-projects#tinkerbellpy)
 
-   * [quadrup_two.py](https://github.com/oonap0oo/small-Python-projects/README.md#quadrup_twopy)
+   * [quadrup_two.py](https://github.com/oonap0oo/small-Python-projects#quadrup_twopy)
 
-   * [Gumowski_Mira.py](https://github.com/oonap0oo/small-Python-projects/README.md#Gumowski_Mirapy)
+   * [Gumowski_Mira.py](https://github.com/oonap0oo/small-Python-projects#Gumowski_Mirapy)
 
-   * [sierpinski_triangle_tkinter_v6.py](https://github.com/oonap0oo/small-Python-projects/README.md#sierpinski_triangle_tkinter_v6py)
+   * [sierpinski_triangle_tkinter_v6.py](https://github.com/oonap0oo/small-Python-projects#sierpinski_triangle_tkinter_v6py)
 
-   * [pascal_triangle_ansi.py](https://github.com/oonap0oo/small-Python-projects/README.md#pascal_triangle_ansipy)
+   * [pascal_triangle_ansi.py](https://github.com/oonap0oo/small-Python-projects#pascal_triangle_ansipy)
 
-   * [pascal_triangle_no_ansi_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#pascal_triangle_no_ansi_v2py)
+   * [pascal_triangle_no_ansi_v2.py](https://github.com/oonap0oo/small-Python-projects#pascal_triangle_no_ansi_v2py)
 
-   * [mandelbrot_text_CPython.py](https://github.com/oonap0oo/small-Python-projects/README.md#mandelbrot_text_CPythonpy)
+   * [mandelbrot_text_CPython.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_text_CPythonpy)
 
-   * [mandelbrot_text_CPython_no_ansi.py](https://github.com/oonap0oo/small-Python-projects/README.md#mandelbrot_text_CPython_no_ansipy)
+   * [mandelbrot_text_CPython_no_ansi.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_text_CPython_no_ansipy)
 
-   * [sierpinsky_turtle_cpython.py](https://github.com/oonap0oo/small-Python-projects/README.md#sierpinsky_turtle_cpythonpy)
+   * [sierpinsky_turtle_cpython.py](https://github.com/oonap0oo/small-Python-projects#sierpinsky_turtle_cpythonpy)
 
-   * [logistic_map_test_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#logistic_map_test_v2py)
+   * [logistic_map_test_v2.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_test_v2py)
 
-   * [gingerbread_CPython.py](https://github.com/oonap0oo/small-Python-projects/README.md#gingerbread_CPythonpy)
+   * [gingerbread_CPython.py](https://github.com/oonap0oo/small-Python-projects#gingerbread_CPythonpy)
 
-   * [recursive_tree_canvas_v4.py](https://github.com/oonap0oo/small-Python-projects/README.md#recursive_tree_canvas_v4py)
+   * [recursive_tree_canvas_v4.py](https://github.com/oonap0oo/small-Python-projects#recursive_tree_canvas_v4py)
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
-   * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects/README.md#pi_monte_carlo_circlepy)
+   * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects#pi_monte_carlo_circlepy)
 
-   * [perimeter_ellipse_v4.py](https://github.com/oonap0oo/small-Python-projects/README.md#perimeter_ellipse_v4py)
+   * [perimeter_ellipse_v4.py](https://github.com/oonap0oo/small-Python-projects#perimeter_ellipse_v4py)
 
-   * [wbridge.py](https://github.com/oonap0oo/small-Python-projects/README.md#wbridgepy)
+   * [wbridge.py](https://github.com/oonap0oo/small-Python-projects#wbridgepy)
 
-   * [lorenz_system_scipy_numpy_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#lorenz_system_scipy_numpy_v2py)
+   * [lorenz_system_scipy_numpy_v2.py](https://github.com/oonap0oo/small-Python-projects#lorenz_system_scipy_numpy_v2py)
 
-   * [runge_kutta_python_code_exp_decay.py](https://github.com/oonap0oo/small-Python-projects/README.md#runge_kutta_python_code_exp_decaypy)
+   * [runge_kutta_python_code_exp_decay.py](https://github.com/oonap0oo/small-Python-projects#runge_kutta_python_code_exp_decaypy)
 
-   * [fourier_series_v4.py](https://github.com/oonap0oo/small-Python-projects/README.md#fourier_series_v4py)
+   * [fourier_series_v4.py](https://github.com/oonap0oo/small-Python-projects#fourier_series_v4py)
 
-   * [scipy_convolution_sallen_key_lpf_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#scipy_convolution_sallen_key_lpf_v2py)
+   * [scipy_convolution_sallen_key_lpf_v2.py](https://github.com/oonap0oo/small-Python-projects#scipy_convolution_sallen_key_lpf_v2py)
 
-   * [simple_linear_regression_dataset_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#simple_linear_regression_dataset_v2py)
+   * [simple_linear_regression_dataset_v2.py](https://github.com/oonap0oo/small-Python-projects#simple_linear_regression_dataset_v2py)
 
-   * [monte_carlo_circuit.py](https://github.com/oonap0oo/small-Python-projects/README.md#monte_carlo_circuitpy)
+   * [monte_carlo_circuit.py](https://github.com/oonap0oo/small-Python-projects#monte_carlo_circuitpy)
 
-   * [lotka_volterra_predator_prey_model_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#lotka_volterra_predator_prey_model_v2py)
+   * [lotka_volterra_predator_prey_model_v2.py](https://github.com/oonap0oo/small-Python-projects#lotka_volterra_predator_prey_model_v2py)
 
-   * [buffons_needle_pi_approximation.py](https://github.com/oonap0oo/small-Python-projects/README.md#buffons_needle_pi_approximationpy)
+   * [buffons_needle_pi_approximation.py](https://github.com/oonap0oo/small-Python-projects#buffons_needle_pi_approximationpy)
 
-   * [pendulum.py](https://github.com/oonap0oo/small-Python-projects/README.md#pendulumpy)
+   * [pendulum.py](https://github.com/oonap0oo/small-Python-projects#pendulumpy)
 
-   * [van_der_pol_oscillator.py](https://github.com/oonap0oo/small-Python-projects/README.md#van_der_pol_oscillatorpy)
+   * [van_der_pol_oscillator.py](https://github.com/oonap0oo/small-Python-projects#van_der_pol_oscillatorpy)
 
-   * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects/README.md#aizawa_attractor_scipy_numpypy)
+   * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects#aizawa_attractor_scipy_numpypy)
 
-   * [nyquist_bode_nichols_plot_pid.py](https://github.com/oonap0oo/small-Python-projects/README.md#nyquist_bode_nichols_plot_pidpy)
+   * [nyquist_bode_nichols_plot_pid.py](https://github.com/oonap0oo/small-Python-projects#nyquist_bode_nichols_plot_pidpy)
 
-   * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects/README.md#trajectory_with_drag5py)
+   * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects#trajectory_with_drag5py)
 
 3. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
-   * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects/README.md#batch_resizerpy)
+   * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
 
-   * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects/README.md#hex_view4py)
+   * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects#hex_view4py)
 
-   * [decimal_degrees_to_dms.py](https://github.com/oonap0oo/small-Python-projects/README.md#decimal_degrees_to_dmspy)
+   * [decimal_degrees_to_dms.py](https://github.com/oonap0oo/small-Python-projects#decimal_degrees_to_dmspy)
 
-   * [pasword_generator_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#pasword_generator_v2py)
+   * [pasword_generator_v2.py](https://github.com/oonap0oo/small-Python-projects#pasword_generator_v2py)
 
-   * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#function_sortandfilter_v2py)
+   * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects#function_sortandfilter_v2py)
 
-   * [class_color_code.py](https://github.com/oonap0oo/small-Python-projects/README.md#class_color_codepy)
+   * [class_color_code.py](https://github.com/oonap0oo/small-Python-projects#class_color_codepy)
 
-   * [get_color_codes.py](https://github.com/oonap0oo/small-Python-projects/README.md#get_color_codespy)
+   * [get_color_codes.py](https://github.com/oonap0oo/small-Python-projects#get_color_codespy)
 
-   * [get_value_from_color_codes.py](https://github.com/oonap0oo/small-Python-projects/README.md#get_value_from_color_codespy)
+   * [get_value_from_color_codes.py](https://github.com/oonap0oo/small-Python-projects#get_value_from_color_codespy)
 
-   * [several_methods_fibonacci_sequence_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#several_methods_fibonacci_sequence_v2py)
+   * [several_methods_fibonacci_sequence_v2.py](https://github.com/oonap0oo/small-Python-projects#several_methods_fibonacci_sequence_v2py)
 
-   * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects/README.md#roman_numerals_v2py)
+   * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects#roman_numerals_v2py)
 
 ## Fractals and strange attractors
 
