@@ -442,6 +442,26 @@ It plots the following graphs of the open loop gain
 * Bode plot
 * Nichols plot
 
+### [trajectory_with_drag5.py](trajectory_with_drag5.py)
+
+![trajectory_with_drag_screenshot.png](trajectory_with_drag_screenshot.png)
+
+Trajectory of a projectile with Quadratic drag.
+
+    Fdrag = k.v²
+
+System of equations used for numeric calculation by 
+scipy.integrate function solve_ivp()
+
+    dx/dt = vx
+    dy/dt = vy
+    dvx/dt = - k/m * vx * v    
+    dvx/dt = - k/m * vx * v - g
+    
+    k/m = mu
+
+The trajectory and velocity are plotted for a set of initial departure angles
+
 ## Small applications and utilities
 
 ### [batch_resizer.py](batch_resizer.py)
