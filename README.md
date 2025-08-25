@@ -73,7 +73,9 @@ small pieces of Python code
 
    * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects#trajectory_with_drag5py)
 
-3. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
+   * [spirograph_offset.py](https://github.com/oonap0oo/small-Python-projects#spirograph_offsetpy)
+
+4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
 
    * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects#hex_view4py)
@@ -546,6 +548,27 @@ scipy.integrate function solve_ivp()
     k/m = mu
 
 The trajectory and velocity are plotted for a set of initial departure angles
+
+### [spirograph_offset.py](spirograph_offset.py)
+
+Aanimated gif made from different graphs from this script. The GIF was made using Gimp.
+
+![Spirograph_animated.gif](Spirograph_animated.gif)
+
+This script generates an image as made by a physical Spirograph.
+
+    x = (R - tau) * cos(t) + rho * cos( (R - tau) / tau * t )
+    y = (R - tau) * sin(t) - rho * sin( (R - tau) / tau * t )
+    
+    R: radius larger outer wheel
+    tau: radius smaller inner wheel
+    rho : distance pen from center of small wheel
+     t: polar coordinate is angle over which inner wheel
+        has travelled inside outer wheel
+    x: x coordinate of pen position
+    y: y coordinate of pen position
+
+Many parameters can be modified, yielding a different image.
 
 ## Small applications and utilities
 
