@@ -74,6 +74,8 @@ small pieces of Python code
    * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects#trajectory_with_drag5py)
 
    * [spirograph_offset.py](https://github.com/oonap0oo/small-Python-projects#spirograph_offsetpy)
+  
+   * [ode_cpython.py](https://github.com/oonap0oo/small-Python-projects#ode_cpythonpy)
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
@@ -569,6 +571,19 @@ This script generates an image as made by a physical Spirograph.
     y: y coordinate of pen position
 
 Many parameters can be modified, yielding a different image.
+
+### [ode_cpython.py](ode_cpython.py)
+
+![ode_cpython_screenshots.gif](ode_cpython_screenshots.gif)
+
+This script calculates a solution to a given first order ordinary differential equation.
+
+    dy/dx = f(x,y)
+
+It also plots the slope field.
+
+the ODE is solved using scipy function solve_ivp(). Also numpy and matplotlib are used.
+
 
 ## Small applications and utilities
 
