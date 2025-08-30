@@ -76,6 +76,8 @@ small pieces of Python code
    * [spirograph_offset.py](https://github.com/oonap0oo/small-Python-projects#spirograph_offsetpy)
   
    * [ode_cpython.py](https://github.com/oonap0oo/small-Python-projects#ode_cpythonpy)
+  
+   * [ode_cpython_2eq.py](https://github.com/oonap0oo/small-Python-projects#ode_cpython_2eqpy)
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
@@ -584,7 +586,18 @@ It also plots the slope field.
 
 the ODE is solved using scipy function solve_ivp(). Also numpy and matplotlib are used.
 
+### [ode_cpython_2eq.py](ode_cpython_2eq.py)
 
+![ODE_2eq_screenshots.gif](ODE_2eq_screenshots.gif)
+
+This script calculates a solution to a given set of two first order ordinary differential equations.
+
+    dy/dx = f(x,y,z)
+    dz/dx = g(x,y,z)
+
+It plots the solution and phase plot.
+
+the ODE is solved using scipy function solve_ivp(). Also numpy and matplotlib are used.
 ## Small applications and utilities
 
 ### [batch_resizer.py](batch_resizer.py)
