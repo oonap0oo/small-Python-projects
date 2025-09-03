@@ -611,7 +611,7 @@ This code calculates and draws some trajectories of objects around the earth in 
 *  Elliptical orbits
 *  Hyperbolic trajectories
 
-The code only uses Turtle grahics for drawing.
+The code uses Turtle graphics for drawing.
 
 Calculations are done just using the math library.
 
