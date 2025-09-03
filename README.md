@@ -78,6 +78,8 @@ small pieces of Python code
    * [ode_cpython.py](https://github.com/oonap0oo/small-Python-projects#ode_cpythonpy)
   
    * [ode_cpython_2eq.py](https://github.com/oonap0oo/small-Python-projects#ode_cpython_2eqpy)
+  
+   * [orbits.py](https://github.com/oonap0oo/small-Python-projects#orbitspy)
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
@@ -598,6 +600,22 @@ This script calculates a solution to a given set of two first order ordinary dif
 It plots the solution and phase plot.
 
 the ODE is solved using scipy function solve_ivp(). Also numpy and matplotlib are used.
+
+### [orbits.py](orbits.py)
+
+![orbits_screenshot.png](orbits_screenshot.png)
+
+This code calcylates some trajectories of objects around the earth in two dimensions x,y
+
+*  Geostationary orbit
+*  Elliptical orbits
+*  Hyperbolic trajectories
+
+The code only uses Turtle grahics for drawing.
+
+Calculations are done just using the math library.
+
+
 ## Small applications and utilities
 
 ### [batch_resizer.py](batch_resizer.py)
