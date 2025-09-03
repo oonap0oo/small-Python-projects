@@ -605,7 +605,7 @@ the ODE is solved using scipy function solve_ivp(). Also numpy and matplotlib ar
 
 ![orbits_screenshot.png](orbits_screenshot.png)
 
-This code calcylates some trajectories of objects around the earth in two dimensions x,y
+This code calculates and draws some trajectories of objects around the earth in two dimensions x,y
 
 *  Geostationary orbit
 *  Elliptical orbits
