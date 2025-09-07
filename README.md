@@ -623,44 +623,35 @@ Calculations are done just using the math library.
 
 ![durand_kerner_cpython2_screenshot2.png](durand_kerner_cpython2_screenshot2.png)
 
-** Durand–Kerner for quadratic equations **
+<b> Durand–Kerner for quadratic equations </b>
 
 Equation has 4 coefficients a,b,c,d:
 
-<code>
-x<sup>4</sup> + a * x<sup>3</sup> + b * x<sup>2</sup> + c * x + d = 0
-</code>
+<code>x<sup>4</sup> + a * x<sup>3</sup> + b * x<sup>2</sup> + c * x + d = 0</code>
 
 Has 4 roots: p,q,r,s:
 
-<code>
-(x-p)(x-q)(x-r)(x-s) = 0
-</code>
+<code>(x-p)(x-q)(x-r)(x-s) = 0</code>
 
 With f(x) defined as:
-<code>
-f(x) = x<sup>4</sup> + a * x<sup>3</sup> + b * x<sup>2</sup> + c * x + d
-</code>
+
+<code>f(x) = x<sup>4</sup> + a * x<sup>3</sup> + b * x<sup>2</sup> + c * x + d</code>
 
 Iterating this:
 
-<code>
-pnew = p - f(p)/[(p - q)(p - r)(p - s)]<br>
+<code>pnew = p - f(p)/[(p - q)(p - r)(p - s)]<br>
 qnew = p - f(q)/[(q - pnew)(q - r)(q - s)]<br>
 rnew = r - f(r)/[(r - pnew)(r - qnew)(r - s)]<br>
-snew = s - f(s)/[(s - pnew)(s - qnew)(s - rnew)]<br>
-</code>
+snew = s - f(s)/[(s - pnew)(s - qnew)(s - rnew)]<br></code>
 
 until p,q,r,s change less then desired precision
 
 initial values for p,q,r,s:
 
-<code>
-p = (0.4+0.9)<sup>1</sup><br>
+<code>p = (0.4+0.9)<sup>1</sup><br>
 q = (0.4+0.9)<sup>2</sup><br>
 r = (0.4+0.9)<sup>3</sup><br>
-s = (0.4+0.9)<sup>4</sup><br>
-</code>
+s = (0.4+0.9)<sup>4</sup><br></code>
 
 
 ## Small applications and utilities
