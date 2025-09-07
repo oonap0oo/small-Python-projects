@@ -7,38 +7,55 @@ small pieces of Python code
    * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1py)
 
    * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1_detailpy)
+This code calculates a image of the Mandelbrot set,
 
    * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects#julia_v1py)
+A modification of the Mandelbrot code allows to calculate the Julia set.
 
    * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
+This code calculates an image of the bifurcation diagram for the logistic map.
 
    * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects#kings_dream_cpythonpy)
+This script draws the Kings Dream fractal, many variations are possible.
 
    * [hopalong.py](https://github.com/oonap0oo/small-Python-projects#hopalongpy)
+A variation of the code for the 'King's dream fractal' yields this 'hopalong' fractal.
 
    * [tinkerbell.py](https://github.com/oonap0oo/small-Python-projects#tinkerbellpy)
+A variation of the code for the 'King's dream fractal' yields this 'tinkerbell' fractal. 
 
    * [quadrup_two.py](https://github.com/oonap0oo/small-Python-projects#quadrup_twopy)
+A further variation of the code for the 'King's dream fractal' yields the 'Quadrup Two' fractal. 
 
    * [Gumowski_Mira.py](https://github.com/oonap0oo/small-Python-projects#Gumowski_Mirapy)
+This Gumowski-Mira fractal, very sensitive to modifications of it's parameters.
 
    * [sierpinski_triangle_tkinter_v6.py](https://github.com/oonap0oo/small-Python-projects#sierpinski_triangle_tkinter_v6py)
+Sierpinski Triangle constructed using the Chaos game method. It rotates and scales in and out.
 
    * [pascal_triangle_ansi.py](https://github.com/oonap0oo/small-Python-projects#pascal_triangle_ansipy)
+This code calculates the first 32 rows of Pascal's triangle. It then prints the last digit of each value by marking if that digit is uneven, the Sierpinski triangle appears. This version uses ANSI escape codes to generate colors and reverse characters
 
    * [pascal_triangle_no_ansi_v2.py](https://github.com/oonap0oo/small-Python-projects#pascal_triangle_no_ansi_v2py)
+This version avoids using ANSI escape codes by reprinting the triangle using a character in place of uneven values
 
    * [mandelbrot_text_CPython.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_text_CPythonpy)
+This code displays a text output of the Mandelbrot fractal. ANSI commands are used to generate color.
 
    * [mandelbrot_text_CPython_no_ansi.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_text_CPython_no_ansipy)
+A version of mandelbrot_text_CPython.py without the ANSI commands.
 
    * [sierpinsky_turtle_cpython.py](https://github.com/oonap0oo/small-Python-projects#sierpinsky_turtle_cpythonpy)
+This script draws a Sierpinsky triangle recursively using turtle.
 
    * [logistic_map_test_v2.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_test_v2py)
+Generating a bifurcation diagram of the Logistic Map. using Numpy and Matplotlib
 
    * [gingerbread_CPython.py](https://github.com/oonap0oo/small-Python-projects#gingerbread_CPythonpy)
+This script draws a “Gingerbread man” fractal.
 
    * [recursive_tree_canvas_v4.py](https://github.com/oonap0oo/small-Python-projects#recursive_tree_canvas_v4py)
+Drawing recursive trees on a Tkinter canvas. 
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
    * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects#pi_monte_carlo_circlepy)
@@ -48,6 +65,7 @@ Approximation of pi using a circle and random points
 Numerically calucating the perimeter of an ellipse
 
    * [wbridge.py](https://github.com/oonap0oo/small-Python-projects#wbridgepy)
+Calculate output voltage of a Wheatstone Bridge as function of one variable resistor Rx 
 
    * [lorenz_system_scipy_numpy_v2.py](https://github.com/oonap0oo/small-Python-projects#lorenz_system_scipy_numpy_v2py)
 Displaying a plot of a 3D Lorenz system solution
@@ -62,22 +80,22 @@ Calculating fourier series of some waveforms
 Calculating the response in tile domain for a Sallen Key filter using convolution
 
    * [simple_linear_regression_dataset_v2.py](https://github.com/oonap0oo/small-Python-projects#simple_linear_regression_dataset_v2py)
-Linear regression in different ways
+Linear regression in 4 different ways, with plots
 
    * [monte_carlo_circuit.py](https://github.com/oonap0oo/small-Python-projects#monte_carlo_circuitpy)
-Exploring effect of value tolerance on a circuit using Monte Carlo 
+Exploring effect of value tolerance on a circuit using Monte Carlo, with plots
 
    * [lotka_volterra_predator_prey_model_v2.py](https://github.com/oonap0oo/small-Python-projects#lotka_volterra_predator_prey_model_v2py)
 Calculating and plotting solution to Predetor-Prey model
 
    * [buffons_needle_pi_approximation.py](https://github.com/oonap0oo/small-Python-projects#buffons_needle_pi_approximationpy)
-Using Buffon's Needle to approximate pi
+Using Buffon's Needle to approximate pi, with plots
 
    * [pendulum.py](https://github.com/oonap0oo/small-Python-projects#pendulumpy)
 Calculating and plotting behaviour of a pendulum solving the ODE
 
    * [van_der_pol_oscillator.py](https://github.com/oonap0oo/small-Python-projects#van_der_pol_oscillatorpy)
-Calculating and plotting two solutions for the Can Der Pol Oscillator, solving the ODE
+Calculating and plotting two solutions for the Van Der Pol Oscillator, solving the ODE
 
    * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects#aizawa_attractor_scipy_numpypy)
 Calculating and plotting the 3D Aizawa attractor using a colorfull approach
@@ -105,7 +123,7 @@ Nuerical calculation of the four solutions to a given quadratic equation
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
-Resize a batch of image files
+This python code resizes all supported image files in a directory.
 
    * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects#hex_view4py)
 Simple console hex viewer
@@ -114,19 +132,24 @@ Simple console hex viewer
 function to convert decimal degrees to degrees - minutes - seconds
 
    * [pasword_generator_v2.py](https://github.com/oonap0oo/small-Python-projects#pasword_generator_v2py)
-Random pasword generator
+Generate a password of given length containing numbers, upper case letters, lower case letters and optionally symbols
 
    * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects#function_sortandfilter_v2py)
+Function which accepts a list of strings, removes duplicates, sorts alphabetically and fiters using a optional search string
 
    * [class_color_code.py](https://github.com/oonap0oo/small-Python-projects#class_color_codepy)
 
    * [get_color_codes.py](https://github.com/oonap0oo/small-Python-projects#get_color_codespy)
+find the color code of a resistor using the classes in class_color_code.py prints the color bands in color on a console using ANSI escape sequences.
 
    * [get_value_from_color_codes.py](https://github.com/oonap0oo/small-Python-projects#get_value_from_color_codespy)
+ind the value and tolerance of a resistor based on the color bands. It uses the classes in class_color_code.py and prints color bands in color using ANSI escape sequences.
 
    * [several_methods_fibonacci_sequence_v2.py](https://github.com/oonap0oo/small-Python-projects#several_methods_fibonacci_sequence_v2py)
+These 6 different Python functions generate the same list containing a specified number of Fibonacci numbers. 
 
    * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects#roman_numerals_v2py)
+This code converts a roman numeral in standard form to an integer
 
 ## Fractals and strange attractors
 
