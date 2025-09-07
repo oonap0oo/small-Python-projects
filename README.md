@@ -42,55 +42,79 @@ small pieces of Python code
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
    * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects#pi_monte_carlo_circlepy)
+Approximation of pi using a circle and random points
 
    * [perimeter_ellipse_v4.py](https://github.com/oonap0oo/small-Python-projects#perimeter_ellipse_v4py)
+Numerically calucating the perimeter of an ellipse
 
    * [wbridge.py](https://github.com/oonap0oo/small-Python-projects#wbridgepy)
 
    * [lorenz_system_scipy_numpy_v2.py](https://github.com/oonap0oo/small-Python-projects#lorenz_system_scipy_numpy_v2py)
+Displaying a plot of a 3D Lorenz system solution
 
    * [runge_kutta_python_code_exp_decay.py](https://github.com/oonap0oo/small-Python-projects#runge_kutta_python_code_exp_decaypy)
+Coding a Runge-Kutta algoritm to solve differential equations directly in Python
 
    * [fourier_series_v4.py](https://github.com/oonap0oo/small-Python-projects#fourier_series_v4py)
+Calculating fourier series of some waveforms
 
    * [scipy_convolution_sallen_key_lpf_v2.py](https://github.com/oonap0oo/small-Python-projects#scipy_convolution_sallen_key_lpf_v2py)
+Calculating the response in tile domain for a Sallen Key filter using convolution
 
    * [simple_linear_regression_dataset_v2.py](https://github.com/oonap0oo/small-Python-projects#simple_linear_regression_dataset_v2py)
+Linear regression in different ways
 
    * [monte_carlo_circuit.py](https://github.com/oonap0oo/small-Python-projects#monte_carlo_circuitpy)
+Exploring effect of value tolerance on a circuit using Monte Carlo 
 
    * [lotka_volterra_predator_prey_model_v2.py](https://github.com/oonap0oo/small-Python-projects#lotka_volterra_predator_prey_model_v2py)
+Calculating and plotting solution to Predetor-Prey model
 
    * [buffons_needle_pi_approximation.py](https://github.com/oonap0oo/small-Python-projects#buffons_needle_pi_approximationpy)
+Using Buffon's Needle to approximate pi
 
    * [pendulum.py](https://github.com/oonap0oo/small-Python-projects#pendulumpy)
+Calculating and plotting behaviour of a pendulum solving the ODE
 
    * [van_der_pol_oscillator.py](https://github.com/oonap0oo/small-Python-projects#van_der_pol_oscillatorpy)
+Calculating and plotting two solutions for the Can Der Pol Oscillator, solving the ODE
 
    * [aizawa_attractor_scipy_numpy.py](https://github.com/oonap0oo/small-Python-projects#aizawa_attractor_scipy_numpypy)
+Calculating and plotting the 3D Aizawa attractor using a colorfull approach
 
    * [nyquist_bode_nichols_plot_pid.py](https://github.com/oonap0oo/small-Python-projects#nyquist_bode_nichols_plot_pidpy)
+For control loop with PID, calculating and plotting Nyquist, Bode and Nichols plot
 
    * [trajectory_with_drag5.py](https://github.com/oonap0oo/small-Python-projects#trajectory_with_drag5py)
+Calculating and plotting ballistic trajectory of a projectile taking drag through the air into account
 
    * [spirograph_offset.py](https://github.com/oonap0oo/small-Python-projects#spirograph_offsetpy)
+Generating images as drawn by a spirograph
   
    * [ode_cpython.py](https://github.com/oonap0oo/small-Python-projects#ode_cpythonpy)
+Solving a given first order ODE and plotting result
   
    * [ode_cpython_2eq.py](https://github.com/oonap0oo/small-Python-projects#ode_cpython_2eqpy)
+Solving a set of two first order ODEs and plotting result
   
    * [orbits.py](https://github.com/oonap0oo/small-Python-projects#orbitspy)
+Calculating and plotting several types of orbits in 2D "space"
   
    * [durand_kerner_cpython2.py](https://github.com/oonap0oo/small-Python-projects#durand_kerner_cpython2py)
+Nuerical calculation of the four solutions to a given quadratic equation
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
+Resize a batch of image files
 
    * [hex_view4.py](https://github.com/oonap0oo/small-Python-projects#hex_view4py)
+Simple console hex viewer
 
    * [decimal_degrees_to_dms.py](https://github.com/oonap0oo/small-Python-projects#decimal_degrees_to_dmspy)
+function to convert decimal degrees to degrees - minutes - seconds
 
    * [pasword_generator_v2.py](https://github.com/oonap0oo/small-Python-projects#pasword_generator_v2py)
+Random pasword generator
 
    * [function_sortandfilter_v2.py](https://github.com/oonap0oo/small-Python-projects#function_sortandfilter_v2py)
 
