@@ -59,7 +59,7 @@ def durand_kerner_loop(coeff):
     # initial values roots
     # roots = [p, q, r, s]
     base_value = 0.4+0.9j
-    roots = [base_value**k for k in range(1,5)]
+    roots = [base_value**k for k in range(4)]
     # loop
     roots_old = roots
     for loop in range(max_loops):
