@@ -698,7 +698,7 @@ initial values for p,q,r,s:
 <code>p = (0.4+0.9)<sup>0</sup><br>
 q = (0.4+0.9)<sup>1</sup><br>
 r = (0.4+0.9)<sup>2</sup><br>
-s = (0.4+0.9)<sup>3/sup><br></code>
+s = (0.4+0.9)<sup>3</sup><br></code>
 
 
 ## Small applications and utilities
