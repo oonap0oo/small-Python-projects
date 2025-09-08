@@ -119,7 +119,7 @@ Solving a set of two first order ODEs and plotting result
 Calculating and plotting several types of orbits in 2D "space"
   
    * [durand_kerner_cpython2.py](https://github.com/oonap0oo/small-Python-projects#durand_kerner_cpython2py)
-Nuerical calculation of the four solutions to a given quadratic equation
+Numerical calculation of the four solutions to a given quadratic equation
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
@@ -695,10 +695,10 @@ until p,q,r,s change less then desired precision
 
 initial values for p,q,r,s:
 
-<code>p = (0.4+0.9)<sup>1</sup><br>
-q = (0.4+0.9)<sup>2</sup><br>
-r = (0.4+0.9)<sup>3</sup><br>
-s = (0.4+0.9)<sup>4</sup><br></code>
+<code>p = (0.4+0.9)<sup>0</sup><br>
+q = (0.4+0.9)<sup>1</sup><br>
+r = (0.4+0.9)<sup>2</sup><br>
+s = (0.4+0.9)<sup>3/sup><br></code>
 
 
 ## Small applications and utilities
