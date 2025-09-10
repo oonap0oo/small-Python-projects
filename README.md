@@ -660,6 +660,27 @@ This code calculates and draws some trajectories of objects around the earth in 
 *  Elliptical orbits
 *  Hyperbolic trajectories
 
+The orbits are calculated from the acceleration based on Newton's law of universal gravitation.
+
+Newton's law of universal gravitation
+
+    F = G * m1 * m2 / r**2
+
+On an object in orbit
+
+    F_attraction = - G * mass_earth * mass_object / r_distance**2
+
+(F in opposite direction of r)
+
+Newton's second law of motion
+
+    F = m.a => a = F / m
+    => a_object = F_attraction / mass_object
+
+Acelleration due to gravity
+
+    => a_object = - G * mass_earth / r_distance**2
+
 The code uses Turtle graphics for drawing.
 
 Calculations are done just using the math library.
