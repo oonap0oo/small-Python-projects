@@ -732,6 +732,17 @@ s = (0.4+0.9)<sup>3</sup><br></code>
 
 This script calculates a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
 
+        il       v2                      v1      iG
+    +--->---------+---------- R ---------+------->------+
+    |             |                      |              |    
+    |             v iC2                  v iC1          |    
+    |             |                      |              |    
+    L             C2                     C1             G   
+    |             |                      |              |
+    |             |                      |              |
+    |             |                      |              |    
+    +-------------+----------------------+--------------+---o Gnd
+    
 Differential equations:
 
     C1*dv1/dt = 1/R * (v2 - v1) - f(v1)
@@ -748,7 +759,7 @@ Differential equations:
 
     f: current through piecewise linear negative resistance G
     
-G is a piecewise linear negative resistance implemented using opamp(s). 
+G is a piecewise linear negative resistance implemented using opamp(s), also called 'Chua diode". 
 
 It supplies energy to the circuit and provides gain and non-linearity.
 
