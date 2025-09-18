@@ -132,7 +132,7 @@ if result.success == False:
     quit()
 
 # unpack values from result object
-x_values ,y_values ,z_values = result.y
+v1, v2, il = result.y
 
 # **** plotting using matplotlib ***************
 
@@ -154,40 +154,40 @@ plt.suptitle(title, fontweight = "bold", size = text_size + 4)
 
 plt.rcParams['grid.color'] = color_grid
 
-# add subplot for x-y values
+# add subplot for v2 vs v1 values
 ax = fig.add_subplot(gs[0])
 ax.grid(linestyle='-')
 ax.set_facecolor(color_plot_background)
-ax.set_xlabel("x", size = text_size, fontweight = "bold")
-ax.set_ylabel("y", size = text_size, fontweight = "bold")
-ax.plot(x_values,y_values, color = colors_plot[0])
-ax.set_title("Values of y vs x", fontweight = "bold", size = text_size)
+ax.set_xlabel("v1", size = text_size, fontweight = "bold")
+ax.set_ylabel("v2", size = text_size, fontweight = "bold")
+ax.plot(v1,v2, color = colors_plot[0])
+ax.set_title("Values of v2 vs v1", fontweight = "bold", size = text_size)
 
-# add subplot for z-y values
+# add subplot for v2 vs il values
 ax = fig.add_subplot(gs[2])
 ax.grid(linestyle='-')
 ax.set_facecolor(color_plot_background)
-ax.set_xlabel("z", size = text_size, fontweight = "bold")
-ax.set_ylabel("y", size = text_size, fontweight = "bold")
-ax.plot(z_values, y_values, color = colors_plot[1])
-ax.set_title("Values of z vs y", fontweight = "bold", size = text_size)
+ax.set_xlabel("il", size = text_size, fontweight = "bold")
+ax.set_ylabel("v2", size = text_size, fontweight = "bold")
+ax.plot(il, v2, color = colors_plot[1])
+ax.set_title("Values of v2 vs il", fontweight = "bold", size = text_size)
 
 # for 3D plot: calculate focal length out of field of view
 focal_len = 1 / np.tan(np.radians(fov_3d_deg / 2))
 #print(f"focal length for 3D plot: {focal_len:.8} for a field of view of {fov_3d_deg}°")
 
-# add subplot for 3D scatter plot of x,y,z
+# add subplot for 3D scatter plot of v1,v2,il
 ax = fig.add_subplot(gs[:,1],projection = "3d")
 ax.set_proj_type('persp', focal_length=focal_len)
-ax.plot(x_values, y_values, z_values, color = colors_plot[2])
+ax.plot(v1, v2, il, color = colors_plot[2])
 ax.set_facecolor(color_plot_background)
-ax.set_xlabel("x", size = text_size, fontweight = "bold")
-ax.set_ylabel("y", size = text_size, fontweight = "bold")
-ax.set_zlabel("z", size = text_size, fontweight = "bold")
+ax.set_xlabel("v1", size = text_size, fontweight = "bold")
+ax.set_ylabel("v2", size = text_size, fontweight = "bold")
+ax.set_zlabel("il", size = text_size, fontweight = "bold")
 ax.xaxis.pane.fill = False
 ax.yaxis.pane.fill = False
 ax.zaxis.pane.fill = False
-ax.set_title("3D plot of Z VS x,y", fontweight = "bold", size = text_size)
+ax.set_title("3D plot of il VS v1,v2", fontweight = "bold", size = text_size)
 
 # define space between subplots
 plt.subplots_adjust(wspace = 0, hspace = 0.229, left = 0.048, right = 0.981, bottom = 0.062, top = 0.898)
