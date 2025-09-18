@@ -6,14 +6,27 @@
 # negative resistance implemented using opamp(s)
 # it supplies energy to the circuit and provides gain and non linearity
 #
-# +---+---- R ---+------+
-# |   |          |      |    
-# L   C2         C1     G   
-# |   |          |      |
-# +---+----------+------+---o Gnd
-
-# Differential equations
-# ----------------------
+#     il       v2                      v1      iG
+# +--->---------+---------- R ---------+------->------+
+# |             |                      |              |    
+# |             v iC2                  v iC1          |    
+# |             |                      |              |    
+# L             C2                     C1             G   
+# |             |                      |              |
+# |             |                      |              |
+# |             |                      |              |    
+# +-------------+----------------------+--------------+---o Gnd
+#
+# iC2 = C2*dv2/dt,   iC1 = C1*dv1/dt,   v2 = -L*dil/dt
+# sum of currents into node is zero:
+# iC1 = (v2 - v1) / R - iG
+# iC2 = il + (v1 - v2) / R
+# The current iG is a function of voltage across G which is v1
+# iG = f(v1)
+# combining above gives system of ODEs:
+#
+# System of Differential equations
+# --------------------------------
 # 
 # C1*dv1/dt = 1/R * (v2 - v1) - f(v1)
 # C2*dv2/dt = 1/R * (v1 - v2) + il
