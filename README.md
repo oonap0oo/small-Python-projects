@@ -121,7 +121,7 @@ Calculating and plotting several types of orbits in 2D "space"
    * [durand_kerner_cpython2.py](https://github.com/oonap0oo/small-Python-projects#durand_kerner_cpython2py)
 Numerical calculation of the four solutions to a given quadratic equation
 
-   * [chua_physical4.py](https://github.com/oonap0oo/small-Python-projects#chua_physical4py)
+   * [chua_physical5.py](https://github.com/oonap0oo/small-Python-projects#chua_physical5py)
 Calculating a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
@@ -724,9 +724,11 @@ q = (0.4+0.9)<sup>1</sup><br>
 r = (0.4+0.9)<sup>2</sup><br>
 s = (0.4+0.9)<sup>3</sup><br></code>
 
-### [chua_physical4.py](chua_physical4.py)
+### [chua_physical5.py](chua_physical5.py)
 
-![chua_physical4_screenshot.png](chua_physical4_screenshot.png)
+![chua_physical5_screenshot1.png](chua_physical5_screenshot1.png)
+![chua_physical5_screenshot2.png](chua_physical5_screenshot2.png)
+![chua_physical5_screenshot3.png](chua_physical5_screenshot3.png)
 
 This script calculates a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
 
