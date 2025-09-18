@@ -121,6 +121,9 @@ Calculating and plotting several types of orbits in 2D "space"
    * [durand_kerner_cpython2.py](https://github.com/oonap0oo/small-Python-projects#durand_kerner_cpython2py)
 Numerical calculation of the four solutions to a given quadratic equation
 
+   * [chua_physical4.py](https://github.com/oonap0oo/small-Python-projects#chua_physical4py)
+Calculating a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
+
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
 This python code resizes all supported image files in a directory.
@@ -720,6 +723,43 @@ initial values for p,q,r,s:
 q = (0.4+0.9)<sup>1</sup><br>
 r = (0.4+0.9)<sup>2</sup><br>
 s = (0.4+0.9)<sup>3</sup><br></code>
+
+### [chua_physical4.py](chua_physical4.py)
+
+![chua_physical4_screenshot.png](chua_physical4_screenshot.png)
+
+This script calculates a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
+
+Differential equations:
+
+    C1*dv1/dt = 1/R * (v2 - v1) - f(v1)
+    
+    C2*dv2/dt = 1/R * (v1 - v2) + il
+ 
+    L*dil/dt = -v2 - rs * il
+
+    v1: voltage across C1
+
+    v2: voltage across C2
+
+    il: current throught L
+
+    f: current through piecewise linear negative resistance G
+    
+G is a piecewise linear negative resistance implemented using opamp(s). 
+
+It supplies energy to the circuit and provides gain and non-linearity.
+
+The solution to the set of ODEs is calculated using scipy.integrate.solve_ivp from the scipy library.
+
+Plotting done using matplotlib.
+
+See also:
+
+* [Chua circuit using circuit simulation software LTspice](https://github.com/oonap0oo/LTspice_analog_circuit_simulation?tab=readme-ov-file#chua_circuit_6cir)
+
+* [Chua circuit using circuit simulation software ngspice](https://github.com/oonap0oo/ngspice_analog_circuit_simulation?tab=readme-ov-file#chuas-circuit)
+
 
 
 ## Small applications and utilities
