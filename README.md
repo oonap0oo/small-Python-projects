@@ -124,7 +124,7 @@ Numerical calculation of the four solutions to a given quadratic equation
    * [chua_physical5.py](https://github.com/oonap0oo/small-Python-projects#chua_physical5py)
 Calculating a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
 
-  * [monty_hall_problem2.py](https://github.com/oonap0oo/small-Python-projects#monty_hall_problem2py)
+   * [monty_hall_problem2.py](https://github.com/oonap0oo/small-Python-projects#monty_hall_problem2py)
 The Monty Hall problem is a probability puzzle in which three closed doors are presented.
 Behind one door the price (a car) is hidden, behind the other two a goat awaits.
 
