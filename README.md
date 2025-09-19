@@ -124,6 +124,10 @@ Numerical calculation of the four solutions to a given quadratic equation
    * [chua_physical5.py](https://github.com/oonap0oo/small-Python-projects#chua_physical5py)
 Calculating a response of Chua's circuit using a set of differential equations which describe a physical circuit with component values.
 
+  * [monty_hall_problem2.py](https://github.com/oonap0oo/small-Python-projects#monty_hall_problem2py)
+The Monty Hall problem is a probability puzzle in which three closed doors are presented.
+Behind one door the price (a car) is hidden, behind the other two a goat awaits.
+
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
 This python code resizes all supported image files in a directory.
@@ -773,6 +777,32 @@ See also:
 
 * [Chua circuit using circuit simulation software ngspice](https://github.com/oonap0oo/ngspice_analog_circuit_simulation?tab=readme-ov-file#chuas-circuit)
 
+### [monty_hall_problem2.py](monty_hall_problem2.py)
+
+![monty_hall_problem2_screenshot.png](monty_hall_problem2_screenshot.png)
+
+<b>Monty Hall problem simulation using Monte Carlo Method</b>
+
+The Monty Hall problem is a probability puzzle in which three closed doors are presented.
+Behind one door the price (a car) is hidden, behind the other two a goat awaits.
+A contestant chooses one of three doors, and the host, who knows where
+the prize is (a car), opens a different door revealing a goat.
+
+The contestant is then offered the chance to switch to
+the remaining unopened door.
+The correct strategy is to always switch,
+as this doubles your chances of winning the prize from 1/3 to 2/3.
+
+A Monte Carlo simulation is a computerized mathematical technique
+that uses repeated random sampling to predict the probable outcomes
+of uncertain events, providing a range of possible results and
+their probabilities.
+
+This code simulates one set of games in which the player always 
+switches his choice of doors. It simulates a second set with 
+same number of games in which the player never switches. 
+
+The number of wins is compared between the two sets
 
 
 ## Small applications and utilities
