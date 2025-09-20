@@ -128,6 +128,10 @@ Calculating a response of Chua's circuit using a set of differential equations w
 The Monty Hall problem is a probability puzzle in which three closed doors are presented.
 Behind one door the price (a car) is hidden, behind the other two a goat awaits.
 
+   * [koch_snowflake_antisnowflake.py](https://github.com/oonap0oo/koch_snowflake_antisnowflakepy)
+The Koch Snowflake and Antisnowflake are constructed using recursive function calls.
+
+
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
    * [batch_resizer.py](https://github.com/oonap0oo/small-Python-projects#batch_resizerpy)
 This python code resizes all supported image files in a directory.
@@ -803,6 +807,17 @@ switches his choice of doors. It simulates a second set with
 same number of games in which the player never switches. 
 
 The number of wins is compared between the two sets
+
+
+### [koch_snowflake_antisnowflake.py](koch_snowflake_antisnowflake.py)
+
+![koch_snowflake_antisnowflake_recording4.gif](koch_snowflake_antisnowflake_recording4.gif)
+
+The <b>Koch Snowflake and Antisnowflake</b> are constructed using recursive function calls.
+
+Figures are redrawn with rising recursion depth, the snowflake and antisnowflake figures are shown.
+
+The Code uses the Turtle Graphics library.
 
 
 ## Small applications and utilities
