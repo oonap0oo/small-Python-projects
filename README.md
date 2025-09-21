@@ -57,7 +57,7 @@ This script draws a “Gingerbread man” fractal.
    * [recursive_tree_canvas_v4.py](https://github.com/oonap0oo/small-Python-projects#recursive_tree_canvas_v4py)
 Drawing recursive trees on a Tkinter canvas.
 
-   * [koch_snowflake_antisnowflake.py](https://github.com/oonap0oo/koch_snowflake_antisnowflakepy)
+   * [koch_snowflake_antisnowflake.py](https://github.com/oonap0oo/small-Python-projects#koch_snowflake_antisnowflakepy)
 The Koch Snowflake and Antisnowflake are constructed using recursive function calls.
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
