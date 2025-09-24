@@ -12,6 +12,9 @@ This code calculates a image of the Mandelbrot set,
    * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects#julia_v1py)
 A modification of the Mandelbrot code allows to calculate the Julia set.
 
+   * [julia_tkinter.py](https://github.com/oonap0oo/small-Python-projects#julia_tkinterpy)
+A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
+
    * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
 This code calculates an image of the bifurcation diagram for the logistic map.
 
@@ -193,6 +196,14 @@ The image can be saved as png image file
 ![julia1.png](julia1.png)
 
 A modification of the Mandelbrot code allows to calculate the Julia set.
+
+### [julia_tkinter.py](julia_tkinter.py)
+
+![julia_tkinter_screenshot1.png](julia_tkinter_screenshot1.png)
+
+![julia_tkinter_screenshot2.png](julia_tkinter_screenshot2.png)
+
+A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
 
 ### [logistic_map_calculate_image_v3.py](logistic_map_calculate_image_v3.py)
 
