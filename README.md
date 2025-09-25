@@ -4,16 +4,19 @@ small pieces of Python code
 ## Sections
 
 1. [Fractals and strange attractors](https://github.com/oonap0oo/small-Python-projects#fractals-and-strange-attractors)
-   * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1py)
+    * [mandelbrot_v1.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1py)
 
-   * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1_detailpy)
+    * [mandelbrot_v1_detail.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_v1_detailpy)
 This code calculates a image of the Mandelbrot set,
 
-   * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects#julia_v1py)
+    * [julia_v1.py](https://github.com/oonap0oo/small-Python-projects#julia_v1py)
 A modification of the Mandelbrot code allows to calculate the Julia set.
 
-   * [julia_tkinter.py](https://github.com/oonap0oo/small-Python-projects#julia_tkinterpy)
+    * [julia_tkinter.py](https://github.com/oonap0oo/small-Python-projects#julia_tkinterpy)
 A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
+
+   * [mandelbrot_pil_image.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_pil_imagepy)
+Plotting a mandelbrot fractal directly to a image which opens in the standard image viewer using the PIL library.
 
    * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
 This code calculates an image of the bifurcation diagram for the logistic map.
@@ -167,6 +170,7 @@ These 6 different Python functions generate the same list containing a specified
    * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects#roman_numerals_v2py)
 This code converts a roman numeral in standard form to an integer
 
+
 ## Fractals and strange attractors
 
 ### [mandelbrot_v1.py](mandelbrot_v1.py)
@@ -204,6 +208,12 @@ A modification of the Mandelbrot code allows to calculate the Julia set.
 ![julia_tkinter_screenshot2.png](julia_tkinter_screenshot2.png)
 
 A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
+
+### [mandelbrot_pil_image.py](mandelbrot_pil_image.py)
+
+![mandelbrot_pil_image_output.png](mandelbrot_pil_image_output.png)
+
+This simple script plots a Mandelbrot fractal directly to an image which then opens in the standard image viewer. It uses the PIL (Pillow) library.
 
 ### [logistic_map_calculate_image_v3.py](logistic_map_calculate_image_v3.py)
 
@@ -346,7 +356,6 @@ This version avoids using ANSI escape codes by reprinting the triangle
 using a character in place of uneven values
 
 ### [mandelbrot_text_CPython.py](mandelbrot_text_CPython.py)
-
 
 ![mandelbrot_text_CPython_screenshot.png](mandelbrot_text_CPython_screenshot.png)
 
