@@ -15,6 +15,9 @@ A modification of the Mandelbrot code allows to calculate the Julia set.
     * [julia_tkinter.py](https://github.com/oonap0oo/small-Python-projects#julia_tkinterpy)
 A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
 
+    * [julia_pil_image.py](https://github.com/oonap0oo/small-Python-projects#julia_pil_imagepy)
+Plotting a Julia fractal directly to a image which opens in the standard image viewer using the PIL library.
+
    * [mandelbrot_pil_image.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_pil_imagepy)
 Plotting a mandelbrot fractal directly to a image which opens in the standard image viewer using the PIL library.
 
@@ -208,6 +211,12 @@ A modification of the Mandelbrot code allows to calculate the Julia set.
 ![julia_tkinter_screenshot2.png](julia_tkinter_screenshot2.png)
 
 A simple approach plotting a colorful julia fractal directly on a tkinter canvas.
+
+### [julia_pil_image.py](julia_pil_image.py)
+
+![julia_pil_image_image.png](julia_pil_image_image.png)
+
+This simple script plots a Julia fractal directly to an image which then opens in the standard image viewer. It uses the PIL (Pillow) library.
 
 ### [mandelbrot_pil_image.py](mandelbrot_pil_image.py)
 
