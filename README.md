@@ -21,10 +21,10 @@ Plotting a Julia fractal directly to a image which opens in the standard image v
    * [mandelbrot_pil_image.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_pil_imagepy)
 Plotting a mandelbrot fractal directly to a image which opens in the standard image viewer using the PIL library.
 
-   * [logistic_map_tkinter.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_tkinterpy)
+   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
 This code calculates an image of the bifurcation diagram for the logistic map.
 
-   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
+   * [logistic_map_tkinter.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_tkinterpy)
    This simple script uses only the tkinter library which comes with CPython to display a logistic map.
 
    * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects#kings_dream_cpythonpy)
