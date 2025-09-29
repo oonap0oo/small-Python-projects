@@ -21,8 +21,11 @@ Plotting a Julia fractal directly to a image which opens in the standard image v
    * [mandelbrot_pil_image.py](https://github.com/oonap0oo/small-Python-projects#mandelbrot_pil_imagepy)
 Plotting a mandelbrot fractal directly to a image which opens in the standard image viewer using the PIL library.
 
-   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
+   * [logistic_map_tkinter.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_tkinterpy)
 This code calculates an image of the bifurcation diagram for the logistic map.
+
+   * [logistic_map_calculate_image_v3.py](https://github.com/oonap0oo/small-Python-projects#logistic_map_calculate_image_v3py)
+   This simple script uses only the tkinter library which comes with CPython to display a logistic map.
 
    * [kings_dream_cpython.py](https://github.com/oonap0oo/small-Python-projects#kings_dream_cpythonpy)
 This script draws the Kings Dream fractal, many variations are possible.
@@ -236,6 +239,16 @@ This code calculates an image of the bifurcation diagram for the logistic map.
 Iterations are done for increasing values of 'a', the logistic map is represented as a Numpy array
 
 The image of the map is displayed using Matplotlib and can be saved as a PNG image file.
+
+### [logistic_map_tkinter.py](logistic_map_tkinter.py)
+
+![logistic_map_tkinter_pillow_screenshot.png](logistic_map_tkinter_pillow_screenshot.png)
+
+This simple script uses only the tkinter library which comes with CPython to display a logistic map.
+
+A slightly extended version allows to save the image as PNG file. It uses the PIL (Pillow) library which is a seperate install:
+
+[logistic_map_tkinter_pillow.py](logistic_map_tkinter_pillow.py)
 
 ### [kings_dream_cpython.py](kings_dream_cpython.py)
 
