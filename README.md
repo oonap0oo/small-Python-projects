@@ -143,6 +143,8 @@ Calculating a response of Chua's circuit using a set of differential equations w
 The Monty Hall problem is a probability puzzle in which three closed doors are presented.
 Behind one door the price (a car) is hidden, behind the other two a goat awaits.
 
+   * [surface_3D_tkinter_v5.py](https://github.com/oonap0oo/small-Python-projects#surface_3D_tkinter_v5py)
+
 
 
 
@@ -862,9 +864,15 @@ same number of games in which the player never switches.
 
 The number of wins is compared between the two sets
 
+### [surface_3D_tkinter_v5.py](surface_3D_tkinter_v5.py)
 
+![surface_3D_tkinter.gif](surface_3D_tkinter.gif)
 
+This script plots 3D surfaces which are given as 
 
+    z = f(x,y)
+
+It uses only the modules math and tkinter which come with CPython.
 
 ## Small applications and utilities
 
