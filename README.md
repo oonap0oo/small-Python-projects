@@ -145,6 +145,8 @@ Behind one door the price (a car) is hidden, behind the other two a goat awaits.
 
    * [surface_3D_tkinter_v5.py](https://github.com/oonap0oo/small-Python-projects#surface_3D_tkinter_v5py)
 
+   * [electrical_field_2_charges.py](https://github.com/oonap0oo/small-Python-projects#electrical_field_2_chargespy)
+   This code assumes 2 electrical point charges and plots the electrical field and potential. The E field is shown as quiver plot, the V field as a contour plot.
 
 
 
@@ -873,6 +875,29 @@ This script plots 3D surfaces which are given as
     z = f(x,y)
 
 It uses only the modules math and tkinter which come with CPython.
+
+### [electrical_field_2_charges.py](electrical_field_2_charges.py)
+
+![electrical_field_2_charges_screenshot.png](electrical_field_2_charges_screenshot.png)
+
+This code assumes 2 electrical point charges and plots the electrical field and potential.
+
+The E field is shown as quiver plot, the V field as a contour plot.
+
+It uses the libraries numpy and matplotlib
+
+It is heavily inspired by the code shown in the Youtube video:
+
+"Electrodynamics: Plotting the Potential and Electric Field for a Dipole with Python"
+
+[https://youtu.be/cP3l6-2Z9rs?si=UqkjKmS5uvNlXhUB](https://youtu.be/cP3l6-2Z9rs?si=UqkjKmS5uvNlXhUB)
+
+The Youtube example uses VPython, a specific library to work with vectors in Python:
+
+[https://vpython.org](https://vpython.org)
+
+The version described here uses only numpy.
+
 
 ## Small applications and utilities
 
