@@ -148,6 +148,9 @@ Behind one door the price (a car) is hidden, behind the other two a goat awaits.
    * [electrical_field_2_charges.py](https://github.com/oonap0oo/small-Python-projects#electrical_field_2_chargespy)
    This code assumes 2 electrical point charges and plots the electrical field and potential. The E field is shown as quiver plot, the V field as a contour plot.
 
+   * [game_of_life5.py](https://github.com/oonap0oo/small-Python-projects#game_of_life5py)
+   The classic Game of life coded using Python, tkinter and numpy
+
 
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
@@ -897,6 +900,24 @@ The Youtube example uses VPython, a specific library to work with vectors in Pyt
 [https://vpython.org](https://vpython.org)
 
 The version described here uses only numpy.
+
+### [game_of_life5.py](game_of_life5.py)
+
+<b>Conway's Game of Life</b>
+
+The classic Game of life coded using Python. 
+
+The graphical representation is implemented using tkinter which comes with a standard CPython installation.
+
+The code also uses numpy for it's array support which is a seperate install.
+
+The "universe" is represented in the code by a numpy array of boolean elements, True means "alive".
+
+In the example a pattern known as "gosper's gun" is shown, it creares moving patterns called "gliders".
+
+![game_of_life_recording.gif](game_of_life_recording.gif)
+
+Eventually these gliders will destroy the "gun" as the "universe" is coded such that patterns wrap around if they go over an edge.
 
 
 ## Small applications and utilities
