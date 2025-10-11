@@ -919,9 +919,17 @@ In the example a pattern known as "gosper's gun" is shown, it creares moving pat
 
 Eventually these gliders will destroy the "gun" as the "universe" is coded such that patterns wrap around if they go over an edge.
 
-An evolved version of the code leverages the processing power of numpy more. Determining the number of neighbours for each cell is done in a vectorized manner:
+An evolved version of the code leverages the processing power of numpy more. Determining the number of neighbours for each cell is done in a vectorized manner
 
-[game_of_life6.py](game_of_life6.py)
+The updated code:
+
+[game_of_life7.py](game_of_life7.py)
+
+Screenshot of the updated code showing two "gosper's guns". Cells with 2 neighbours are shown in red, cells with 3 are orange.
+
+![game_of_life_recording2_screenshot3.png](game_of_life_recording2_screenshot3.png)
+
+
 
 
 ## Small applications and utilities
