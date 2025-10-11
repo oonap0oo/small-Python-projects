@@ -187,6 +187,8 @@ gen_count = 0
 
 running = False
 
+canvas1.create_text(screen_width // 2, screen_height // 2, text = "Click field to start",
+                    anchor = "center", font = ("TkFixedFont",30,"normal"), fill = "white")
 
 # tkinter main loop
 tk.mainloop()
