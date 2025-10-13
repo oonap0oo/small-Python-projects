@@ -37,7 +37,6 @@
 # 7                  | 0                        | 0
 # 8                  | 0                        | 0
 
-
 import tkinter as tk
 import numpy as np
 
@@ -84,7 +83,7 @@ def drawfield(field, neighbours, cvs):
         cvs.create_line(0, y, x_grid[-1], y, fill = grid_color)
     # get row and column indexes of elements in array field equal to 1
     rows, cols = np.where(field == 1)
-
+    # determine cell color based on number of neighbours (2 or 3 for alive cell)
     cell_colors = colors[neighbours[rows, cols] % 2]
     # draw rectangles at locations in grid given by indexes in rows, cols
     for x1, y1, x2, y2, cell_color in zip(cols * size, rows * size, cols * size + size, rows * size + size, cell_colors):
@@ -97,19 +96,19 @@ def drawfield(field, neighbours, cvs):
 # and shows new data on the tkinter canvas
 # this funtion calls itself after delay "dt"
 def update_generation():
-    global gen_count, field1, neighbours1
+    global gen_count, field1, neighbours1, schedule
     drawfield(field1, neighbours1, canvas1)
     field1, neighbours1 = update_field_vectorized(field1)
     gen_count += 1
-    root1.after(dt, update_generation) # call this function again with time delay
+    schedule = root1.after(dt, update_generation) # call this function again with time delay
 
 # starts and stops program after mouse click
 def click_handler(event):
     global running # this function has to update the bool "running"
     if event.num == 1: # left mouse button
-        if running:
-            root1.quit()
-            root1.destroy() # if already running then stop
+        if running: # if already running then stop
+            root1.after_cancel(schedule)
+            root1.destroy()
         else:
             running = True # if not running yet, start
             # call this function for the first time, will call itself from then on with time delay
@@ -178,6 +177,7 @@ field1[gosper_gun_rows+15, gosper_gun_cols+5] = 1
 field1[gosper_gun_rows+15, 118-gosper_gun_cols] = 1
 field1[light_spaceship_rows+5, light_spaceship_cols+45] = 1
 field1[light_spaceship_rows+70, 85-light_spaceship_cols] = 1
+field1[light_spaceship_rows+55, light_spaceship_cols+23] = 1
 
 # make tkinter root and canvas objects
 canvas1, root1 = generate_tk_canvas(screen_height, screen_width)
@@ -196,6 +196,6 @@ canvas1.create_text(screen_width // 2, screen_height // 2, text = "Click in wind
                     anchor = "center", font = ("TkFixedFont",30,"normal"), fill = "white")
 
 # tkinter main loop
-tk.mainloop()
+root1.mainloop()
 
     
