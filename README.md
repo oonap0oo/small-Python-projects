@@ -919,6 +919,9 @@ Screenshot showing two "gosper's guns" these patterns create other patters calle
 
 Cells with 2 neighbours are shown in red, cells with 3 are orange.
 
+Recording:
+[https://youtu.be/63jfOTeC7Dc?si=aUkHD4W33TaYDF15(https://youtu.be/63jfOTeC7Dc?si=aUkHD4W33TaYDF15)
+
 
 
 ## Small applications and utilities
