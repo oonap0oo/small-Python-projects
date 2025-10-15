@@ -151,6 +151,10 @@ Behind one door the price (a car) is hidden, behind the other two a goat awaits.
    * [game_of_life7.py](https://github.com/oonap0oo/small-Python-projects#game_of_life7py)
    The classic Game of life coded using Python, tkinter and numpy
 
+   * [lissajou_text4_large.py](https://github.com/oonap0oo/small-Python-projects#lissajou_text4_largepy)
+   This code creates a Lissajou figure on a text based console. Text has to be send line per line which means the code has to figure out for each line (corresponding to an y value) which x values are part of the Lissajou figure.
+
+
 
 
 4. [Small applications and utilities](https://github.com/oonap0oo/small-Python-projects#small-applications-and-utilities)
@@ -922,7 +926,27 @@ Cells with 2 neighbours are shown in red, cells with 3 are orange.
 Recording:
 [https://youtu.be/63jfOTeC7Dc?si=aUkHD4W33TaYDF15](https://youtu.be/63jfOTeC7Dc?si=aUkHD4W33TaYDF15)
 
+### [lissajou_text4_large.py](lissajou_text4_large.py)
 
+![lissajou_text4_large_animated.gif](lissajou_text4_large_animated.gif)
+
+This code creates a Lissajou figure on a text based console. 
+
+Text has to be send line per line which means the code has to figure out for each line (corresponding to an y value) which x values are part of the Lissajou figure.
+
+lissajou figure with two relatibe freq. and a phase shift:
+    
+    x(t) = x_ampl * cos(fx * t)
+    y(t) = y_ampl * sin(fy * t + phase)
+
+For a given y value, the following is used to find x values:
+
+    t1(y, k) = 1/fy * ( asin(y / y_ampl) + k * 2 * pi - phase )
+    t2(y, k) = 1/fy * ( - asin(y / y_ampl) + (1 - 2 * k) * pi - phase )
+    x1 = x_ampl * cos(fx * t1)
+    x2 = x_ampl * cos(fx * t2)
+
+k is an integer number, the number of t values needed seem to be equal to  the largest of the relative frequencies fx and fy.
 
 ## Small applications and utilities
 
