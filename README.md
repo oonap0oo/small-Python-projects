@@ -72,6 +72,10 @@ Drawing recursive trees on a Tkinter canvas.
    * [koch_snowflake_antisnowflake.py](https://github.com/oonap0oo/small-Python-projects#koch_snowflake_antisnowflakepy)
 The Koch Snowflake and Antisnowflake are constructed using recursive function calls.
 
+   * [rabinovich_fabrikant_system.py](https://github.com/oonap0oo/small-Python-projects#rabinovich_fabrikant_systempy)
+This script generates 3D plot of a solution to the Rabinovich–Fabrikant System for given parameters and initial conditions.
+
+
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
    * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects#pi_monte_carlo_circlepy)
 Approximation of pi using a circle and random points
@@ -449,6 +453,22 @@ The <b>Koch Snowflake and Antisnowflake</b> are constructed using recursive func
 Figures are redrawn with rising recursion depth, the snowflake and antisnowflake figures are shown.
 
 The Code uses the Turtle Graphics library.
+
+### [rabinovich_fabrikant_system.py](rabinovich_fabrikant_system.py)
+
+Wikipedia: "The Rabinovich–Fabrikant equations are a set of three coupled ordinary differential equations exhibiting chaotic behaviour for certain values of the parameters. They are named after Mikhail Rabinovich and Anatoly Fabrikant, who described them in 1979."
+[https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations](https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations)
+
+![Rabinovich–Fabrikant_System2.png](Rabinovich–Fabrikant_System2.png)
+
+Rabinovich–Fabrikant System
+
+    dx/dt = y * (z - 1 + x**2) + γ * x
+    dy/dt = x * (3 * z + 1 - x**2) + γ * y
+    dz/dt = -2 * z * (α + x * y)
+
+![Rabinovich–Fabrikant_System3.png](Rabinovich–Fabrikant_System3.png)
+
  
 ## Calculating and plotting using Numpy and Matplotlib
 
