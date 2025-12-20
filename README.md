@@ -456,9 +456,12 @@ The Code uses the Turtle Graphics library.
 
 ### [rabinovich_fabrikant_system.py](rabinovich_fabrikant_system.py)
 
+This script generates 3D plot of a solution to the Rabinovich–Fabrikant System for given parameters and initial conditions. It uses the scipy function solve_ivp() to solve the set of ODEs.
+
 Wikipedia: "The Rabinovich–Fabrikant equations are a set of three coupled ordinary differential equations exhibiting chaotic behaviour for certain values of the parameters. They are named after Mikhail Rabinovich and Anatoly Fabrikant, who described them in 1979."
 [https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations](https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations)
 
+A example plot
 ![Rabinovich–Fabrikant_System2.png](Rabinovich–Fabrikant_System2.png)
 
 Rabinovich–Fabrikant System
@@ -467,6 +470,7 @@ Rabinovich–Fabrikant System
     dy/dt = x * (3 * z + 1 - x**2) + γ * y
     dz/dt = -2 * z * (α + x * y)
 
+A second example plot:
 ![Rabinovich–Fabrikant_System3.png](Rabinovich–Fabrikant_System3.png)
 
  
