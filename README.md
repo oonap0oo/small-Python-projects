@@ -191,6 +191,9 @@ These 6 different Python functions generate the same list containing a specified
    * [roman_numerals_v2.py](https://github.com/oonap0oo/small-Python-projects#roman_numerals_v2py)
 This code converts a roman numeral in standard form to an integer
 
+   * [test_machine_eps2.py](https://github.com/oonap0oo/small-Python-projects#test_machine_eps2py)
+Determine machine epsilon through test
+
 
 ## Fractals and strange attractors
 
@@ -1048,6 +1051,15 @@ a function from the sympy library and Binet's formula, a closed-form expression.
 
 This code converts a roman numeral in standard form to an integer
 
+### [test_machine_eps2.py](test_machine_eps2.py)
+
+Determine machine epsilon through test
+
+Epsilon is smallest value such that (1.0 + epsilon) is still distinguishable from 1.0 by the system
+
+(note: for numpy epsilon can also be found directly using numpy.finfo())
+
+![test_machine_eps2_screenshot.png](test_machine_eps2_screenshot.png)
 
 
 
