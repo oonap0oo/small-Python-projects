@@ -470,8 +470,11 @@ Rabinovich–Fabrikant System
     dy/dt = x * (3 * z + 1 - x**2) + γ * y
     dz/dt = -2 * z * (α + x * y)
 
-A second example plot:
+Some more example plots:
 ![Rabinovich–Fabrikant_System3.png](Rabinovich–Fabrikant_System3.png)
+
+![Rabinovich–Fabrikant_System4.png](Rabinovich–Fabrikant_System4.png)
+
 
  
 ## Calculating and plotting using Numpy and Matplotlib
