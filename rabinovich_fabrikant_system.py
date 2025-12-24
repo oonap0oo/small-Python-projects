@@ -31,13 +31,13 @@ def rabinov(time, xyz, alpha, gamma):
 
 # parameters of the Rabinovich–Fabrikant System
 # example 1
-alpha = 1.1
-gamma = 0.87
-x0 = -1.0
-y0 = 0.0
-z0 = 0.5
-total_time = 100.0 # total time in seconds covered
-number_of_steps = 20000 # total number of values calculated 
+##alpha = 1.1
+##gamma = 0.87
+##x0 = -1.0
+##y0 = 0.0
+##z0 = 0.5
+##total_time = 100.0 # total time in seconds covered
+##number_of_steps = 20000 # total number of values calculated 
 
 # example 2
 ##alpha = 0.05
@@ -55,7 +55,17 @@ number_of_steps = 20000 # total number of values calculated
 ##y0 = -0.1
 ##z0 = 0.1
 ##total_time = 500.0 # total time in seconds covered
-##number_of_steps = 60000 # total number of values calculated       
+##number_of_steps = 60000 # total number of values calculated
+
+# example 4
+alpha = 0.14
+gamma = 0.11
+x0 = 0.1
+y0 = -0.1
+z0 = 0.1
+total_time = 500.0 # total time in seconds covered
+number_of_steps = 50000 # total number of values calculated 
+
 
 # set initial conditions as list required by scipy function   
 xyz_initial = [x0,y0,z0]
@@ -80,9 +90,10 @@ time_points = np.linspace(0, total_time, number_of_steps)
 print("Calling Scipy function solve_ivp()")
 
 # call the scipy function which returns a specific object, here referenced by result
-# additional arguments for function chen() have to be passed via a tuple as keyword parameter 'args'
+# additional arguments for function rabinov() have to be passed via a tuple as keyword parameter 'args'
+# example 4 requires the use of the "Radau" method
 result = solve_ivp(rabinov, time_interval, xyz_initial, t_eval=time_points,
-                   args=(alpha, gamma))
+                   args=(alpha, gamma), method = "Radau")
 
 # abort here if the calculation was not succesfull
 if not result.success:
