@@ -75,6 +75,9 @@ The Koch Snowflake and Antisnowflake are constructed using recursive function ca
    * [rabinovich_fabrikant_system.py](https://github.com/oonap0oo/small-Python-projects#rabinovich_fabrikant_systempy)
 This script generates 3D plot of a solution to the Rabinovich–Fabrikant System for given parameters and initial conditions.
 
+   * [thomas_attractor.py](https://github.com/oonap0oo/small-Python-projects#thomas_attractorpy)
+This plots the Thomas attractor for given parameter b and initial conditions.
+
 
 2. [Calculating and plotting using Numpy and Matplotlib](https://github.com/oonap0oo/small-Python-projects#calculating-and-plotting-using-numpy-and-matplotlib)
    * [pi_monte_carlo_circle.py](https://github.com/oonap0oo/small-Python-projects#pi_monte_carlo_circlepy)
@@ -464,7 +467,7 @@ This script generates 3D plot of a solution to the Rabinovich–Fabrikant System
 Wikipedia: "The Rabinovich–Fabrikant equations are a set of three coupled ordinary differential equations exhibiting chaotic behaviour for certain values of the parameters. They are named after Mikhail Rabinovich and Anatoly Fabrikant, who described them in 1979."
 [https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations](https://en.wikipedia.org/wiki/Rabinovich%E2%80%93Fabrikant_equations)
 
-A example plot
+An example plot
 ![Rabinovich–Fabrikant_System2.png](Rabinovich–Fabrikant_System2.png)
 
 Rabinovich–Fabrikant System
@@ -478,6 +481,23 @@ Some more example plots:
 
 ![Rabinovich–Fabrikant_System4.png](Rabinovich–Fabrikant_System4.png)
 
+### [thomas_attractor.py](thomas_attractor.py)
+
+This script generates 3D plot of the Thomas attractor for given parameter b and initial conditions. It uses the scipy function solve_ivp() to solve the set of ODEs.
+
+An example plot
+![Thomas_attractor6.png](Thomas_attractor6.png)
+
+    Thomas attractor:
+
+    dx/dt = sin(y) - b * x
+    dy/dt = sin(z) - b * y
+    dz/dt = sin(x) - b * b
+
+Some more example plots:
+![Thomas_attractor3.png](Thomas_attractor3.png)
+
+![Thomas_attractor5.png](Thomas_attractor5.png)
 
  
 ## Calculating and plotting using Numpy and Matplotlib
