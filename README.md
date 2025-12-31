@@ -495,7 +495,7 @@ An example plot
     dz/dt = sin(x) - b * b
 
 Some more example plots:
-![Thomas_attractor3.png](Thomas_attractor3.png)
+![Thomas_attractor.png](Thomas_attractor.png)
 
 ![Thomas_attractor5.png](Thomas_attractor5.png)
 
